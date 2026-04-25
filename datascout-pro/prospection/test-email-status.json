@@ -1,0 +1,17 @@
+{
+  "object": "email",
+  "id": "7f479a37-8201-45ec-8680-d471c81745c5",
+  "to": [
+    "ferme@fermedubec.com"
+  ],
+  "from": "Ellie VAI <contact@ellievai.com>",
+  "created_at": "2026-04-25 19:25:47.532302+00",
+  "subject": "Votre réseau de restaurants bio est prêt",
+  "bcc": [],
+  "cc": [],
+  "reply_to": [],
+  "last_event": "bounced",
+  "scheduled_at": null,
+  "html": null,
+  "text": "Bonjour,\n\nJe suis tombé sur La Ferme du Bec Hellouin en cherchant des producteurs bio en Normandie.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos maraîchage bio permaculture, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com"
+}
