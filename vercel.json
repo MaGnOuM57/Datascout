@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/index-new-final.html"
+      "destination": "/index-final.html"
     }
   ],
   "cleanUrls": true,
