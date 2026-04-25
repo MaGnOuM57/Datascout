@@ -14,7 +14,7 @@
 
 1. Va sur https://resend.com/domains
 2. Clique "Add Domain"
-3. Entre: `datascout.pro`
+3. Entre: `ellievai.com`
 4. Resend génère 3 DNS records
 
 ---
@@ -26,7 +26,7 @@
 #### Record 1: SPF
 ```
 Type: TXT
-Name: @ (ou datascout.pro)
+Name: @ (ou ellievai.com)
 Value: v=spf1 include:resend.com ~all
 TTL: 3600 (ou auto)
 ```
@@ -51,7 +51,7 @@ TTL: 3600
 ```
 Type: TXT
 Name: _dmarc
-Value: v=DMARC1; p=quarantine; rua=mailto:contact@datascout.pro; pct=100; adkim=s; aspf=s
+Value: v=DMARC1; p=quarantine; rua=mailto:contact@ellievai.com; pct=100; adkim=s; aspf=s
 TTL: 3600
 ```
 
@@ -61,9 +61,9 @@ TTL: 3600
 
 Vérifier via terminal:
 ```bash
-dig TXT datascout.pro +short
-dig TXT resend._domainkey.datascout.pro +short
-dig TXT _dmarc.datascout.pro +short
+dig TXT ellievai.com +short
+dig TXT resend._domainkey.ellievai.com +short
+dig TXT _dmarc.ellievai.com +short
 ```
 
 Ou via web: https://mxtoolbox.com/SuperTool.aspx
@@ -259,7 +259,7 @@ Offre last minute dimanche soir (20h-23h):
 
 **TOI (maintenant):**
 1. ☐ Va sur Resend.com/domains
-2. ☐ Ajoute `datascout.pro`
+2. ☐ Ajoute `ellievai.com`
 3. ☐ Copie DNS records
 4. ☐ Configure chez registrar
 5. ☐ Attends "Verified" (5-30 min)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Safe Email Sender - Anti-Spam Optimized
-DataScout Pro Cold Outreach
+Ellie VAI Cold Outreach
 
 Features:
 - Progressive delay (3-5 min between emails)
@@ -20,8 +20,8 @@ from datetime import datetime
 
 # Config
 RESEND_KEY = "re_bRV78NGE_JtTkPnxngK9DK37tkojWvPRh"
-FROM_EMAIL = "contact@datascout.pro"
-FROM_NAME = "DataScout Pro"
+FROM_EMAIL = "contact@ellievai.com"
+FROM_NAME = "Ellie VAI"
 DELAY_MIN = 180  # 3 minutes
 DELAY_MAX = 300  # 5 minutes
 MAX_BOUNCE_RATE = 0.05  # 5% max
@@ -207,7 +207,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    print("🚀 DataScout Pro - Safe Email Sender")
+    print("🚀 Ellie VAI - Safe Email Sender")
     print("="*60)
     
     send_batch(args.batch, dry_run=args.dry_run)

@@ -4,7 +4,7 @@
 
 1. Va sur https://resend.com/domains
 2. Clique "Add Domain"
-3. Entre: `datascout.pro`
+3. Entre: `ellievai.com`
 4. Resend va générer 3 DNS records
 
 ---
@@ -31,7 +31,7 @@ Value: [une longue clé cryptée fournie par Resend]
 ```
 Type: TXT
 Name: _dmarc
-Value: v=DMARC1; p=none; rua=mailto:contact@datascout.pro
+Value: v=DMARC1; p=none; rua=mailto:contact@ellievai.com
 ```
 
 ---
@@ -42,8 +42,8 @@ Value: v=DMARC1; p=none; rua=mailto:contact@datascout.pro
 
 ```
 Type: TXT
-Name: _dmarc.datascout.pro
-Value: v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@datascout.pro; ruf=mailto:dmarc-forensics@datascout.pro; pct=100; adkim=s; aspf=s
+Name: _dmarc.ellievai.com
+Value: v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@ellievai.com; ruf=mailto:dmarc-forensics@ellievai.com; pct=100; adkim=s; aspf=s
 ```
 
 **Explication:**
@@ -58,13 +58,13 @@ Value: v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@datascout.pro; ruf=mailt
 
 ```bash
 # Check SPF
-dig TXT datascout.pro +short
+dig TXT ellievai.com +short
 
 # Check DKIM
-dig TXT resend._domainkey.datascout.pro +short
+dig TXT resend._domainkey.ellievai.com +short
 
 # Check DMARC
-dig TXT _dmarc.datascout.pro +short
+dig TXT _dmarc.ellievai.com +short
 ```
 
 ---

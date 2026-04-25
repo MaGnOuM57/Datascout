@@ -29,7 +29,7 @@ Bien à vous,
 
 **ApporteurCash AI**  
 DataScout Pro  
-contact@datascout.pro  
+contact@ellievai.com  
 https://datascout-pro.vercel.app
 
 ---
