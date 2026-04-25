@@ -1,0 +1,130 @@
+{
+  "lastUpdate": "2026-04-25T14:00:00Z",
+  "business": {
+    "revenue": {
+      "total": 0,
+      "target": 500,
+      "currency": "EUR"
+    },
+    "sales": {
+      "count": 0,
+      "target": 3,
+      "avgTicket": 149
+    },
+    "conversion": {
+      "prospectsContacted": 0,
+      "emailsSent": 0,
+      "responses": 0,
+      "meetings": 0,
+      "conversions": 0,
+      "conversionRate": 0
+    }
+  },
+  "prospecting": {
+    "totalProspects": 77,
+    "batches": [
+      {
+        "date": "2026-04-25",
+        "time": "11:36",
+        "count": 15,
+        "file": "prospects/2026-04-25-batch-11h.md",
+        "avgScore": 8.2
+      },
+      {
+        "date": "2026-04-25",
+        "time": "14:00",
+        "count": 12,
+        "file": "prospects/2026-04-25-batch-14h.md",
+        "avgScore": 8.0
+      }
+    ],
+    "bySegment": {
+      "fournisseursBio": 20,
+      "equipementCuisine": 8,
+      "distributeursMaree": 6,
+      "vinsBoissons": 8,
+      "fintech": 5,
+      "grossistes": 15,
+      "autres": 15
+    },
+    "topPriority": [
+      {
+        "name": "Electrolux Professional",
+        "score": 9,
+        "segment": "equipement",
+        "reason": "Gros budgets, ROI évident"
+      },
+      {
+        "name": "Sunday",
+        "score": 9,
+        "segment": "fintech",
+        "reason": "Hyper-croissance, CAC élevé"
+      },
+      {
+        "name": "Terroirs d'Avenir",
+        "score": 9,
+        "segment": "fournisseur",
+        "reason": "Réseau chefs Michelin"
+      },
+      {
+        "name": "Biocoop Entreprises",
+        "score": 9,
+        "segment": "grossiste",
+        "reason": "Leader bio France"
+      },
+      {
+        "name": "Zenchef",
+        "score": 8,
+        "segment": "saas",
+        "reason": "Pipeline acquisition constant"
+      }
+    ]
+  },
+  "outreach": {
+    "emailTemplates": 3,
+    "personalizedEmails": 5,
+    "emailsSent": 0,
+    "scheduledSend": "2026-04-28T09:00:00Z"
+  },
+  "mvp": {
+    "landingPageDeployed": false,
+    "stripeConfigured": false,
+    "pdfCreated": false,
+    "readyToSell": false,
+    "blockingIssues": [
+      "Landing page not deployed (Vercel/Netlify)",
+      "Stripe payment link not configured",
+      "PDF report not converted from markdown"
+    ]
+  },
+  "milestones": {
+    "firstProspectBatch": {
+      "date": "2026-04-25T11:36:00Z",
+      "achieved": true
+    },
+    "firstColdEmails": {
+      "date": "2026-04-25T14:00:00Z",
+      "achieved": true
+    },
+    "mvpLive": {
+      "achieved": false,
+      "targetDate": "2026-04-26"
+    },
+    "firstSale": {
+      "achieved": false,
+      "targetDate": "2026-05-02"
+    }
+  },
+  "automation": {
+    "cronJobsActive": true,
+    "telegramConnected": true,
+    "gitAutoCommit": true,
+    "emailAutomation": false
+  },
+  "timeline": {
+    "startDate": "2026-04-24",
+    "validationDeadline": "2026-05-09",
+    "daysElapsed": 1,
+    "daysRemaining": 14
+  }
+}
