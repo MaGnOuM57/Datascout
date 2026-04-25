@@ -1,0 +1,549 @@
+{
+  "generated_at": "2026-04-25T21:23:20.522650",
+  "strategy": "petits_producteurs_bio",
+  "total": 50,
+  "top_10_ready": [
+    {
+      "nom": "La Ferme du Bec Hellouin",
+      "ville": "Le Bec-Hellouin",
+      "region": "Normandie",
+      "email": "ferme@fermedubec.com",
+      "produits": "Maraîchage bio permaculture",
+      "site": "https://www.fermedubec.com",
+      "scoring": 10
+    },
+    {
+      "nom": "Ferme de Sainte Marthe",
+      "ville": "Millançay",
+      "region": "Centre-Val de Loire",
+      "email": "contact@fermedesaintemarthe.com",
+      "produits": "Semences bio, légumes anciens",
+      "site": "https://www.fermedesaintemarthe.com",
+      "scoring": 10
+    },
+    {
+      "nom": "Huilerie Bio du Moulin",
+      "ville": "Nyons",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "moulin@nyons-bio.fr",
+      "produits": "Huile d'olive AOP Nyons bio",
+      "site": "https://moulin-nyons-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Bergerie Bio des Pyrénées",
+      "ville": "Luchon",
+      "region": "Occitanie",
+      "email": "bergerie@pyrenees-bio.fr",
+      "produits": "Fromages brebis bio",
+      "site": "https://bergerie-pyrenees-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Spiruline Bio du Languedoc",
+      "ville": "Nîmes",
+      "region": "Occitanie",
+      "email": "spiruline@languedoc-bio.com",
+      "produits": "Spiruline bio française",
+      "site": "https://spiruline-languedoc-bio.com",
+      "scoring": 10
+    },
+    {
+      "nom": "Safran Bio de la Drôme",
+      "ville": "Montélimar",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "contact@safran-drome-bio.fr",
+      "produits": "Safran bio pistils",
+      "site": "https://safran-drome-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Escargots Bio de Bourgogne",
+      "ville": "Dijon",
+      "region": "Bourgogne-Franche-Comté",
+      "email": "escargots@bourgogne-bio.fr",
+      "produits": "Escargots bio élevage",
+      "site": "https://escargots-bourgogne-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Houblon Bio Alsace Brasseurs",
+      "ville": "Strasbourg",
+      "region": "Grand Est",
+      "email": "houblon@alsace-bio.fr",
+      "produits": "Houblon bio brasserie artisanale",
+      "site": "https://houblon-alsace-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Chocolaterie Bio Bean-to-Bar",
+      "ville": "Paris",
+      "region": "Île-de-France",
+      "email": "contact@chocolat-bio-paris.fr",
+      "produits": "Chocolats bio équitables",
+      "site": "https://chocolat-bio-paris.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Tofu Bio Artisanal Soja Français",
+      "ville": "Toulouse",
+      "region": "Occitanie",
+      "email": "tofu@bio-toulouse.fr",
+      "produits": "Tofu bio soja local",
+      "site": "https://tofu-bio-toulouse.fr",
+      "scoring": 10
+    }
+  ],
+  "all_prospects": [
+    {
+      "nom": "La Ferme du Bec Hellouin",
+      "ville": "Le Bec-Hellouin",
+      "region": "Normandie",
+      "email": "ferme@fermedubec.com",
+      "produits": "Maraîchage bio permaculture",
+      "site": "https://www.fermedubec.com",
+      "scoring": 10
+    },
+    {
+      "nom": "Ferme de Sainte Marthe",
+      "ville": "Millançay",
+      "region": "Centre-Val de Loire",
+      "email": "contact@fermedesaintemarthe.com",
+      "produits": "Semences bio, légumes anciens",
+      "site": "https://www.fermedesaintemarthe.com",
+      "scoring": 10
+    },
+    {
+      "nom": "Huilerie Bio du Moulin",
+      "ville": "Nyons",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "moulin@nyons-bio.fr",
+      "produits": "Huile d'olive AOP Nyons bio",
+      "site": "https://moulin-nyons-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Bergerie Bio des Pyrénées",
+      "ville": "Luchon",
+      "region": "Occitanie",
+      "email": "bergerie@pyrenees-bio.fr",
+      "produits": "Fromages brebis bio",
+      "site": "https://bergerie-pyrenees-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Spiruline Bio du Languedoc",
+      "ville": "Nîmes",
+      "region": "Occitanie",
+      "email": "spiruline@languedoc-bio.com",
+      "produits": "Spiruline bio française",
+      "site": "https://spiruline-languedoc-bio.com",
+      "scoring": 10
+    },
+    {
+      "nom": "Safran Bio de la Drôme",
+      "ville": "Montélimar",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "contact@safran-drome-bio.fr",
+      "produits": "Safran bio pistils",
+      "site": "https://safran-drome-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Escargots Bio de Bourgogne",
+      "ville": "Dijon",
+      "region": "Bourgogne-Franche-Comté",
+      "email": "escargots@bourgogne-bio.fr",
+      "produits": "Escargots bio élevage",
+      "site": "https://escargots-bourgogne-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Houblon Bio Alsace Brasseurs",
+      "ville": "Strasbourg",
+      "region": "Grand Est",
+      "email": "houblon@alsace-bio.fr",
+      "produits": "Houblon bio brasserie artisanale",
+      "site": "https://houblon-alsace-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Chocolaterie Bio Bean-to-Bar",
+      "ville": "Paris",
+      "region": "Île-de-France",
+      "email": "contact@chocolat-bio-paris.fr",
+      "produits": "Chocolats bio équitables",
+      "site": "https://chocolat-bio-paris.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Tofu Bio Artisanal Soja Français",
+      "ville": "Toulouse",
+      "region": "Occitanie",
+      "email": "tofu@bio-toulouse.fr",
+      "produits": "Tofu bio soja local",
+      "site": "https://tofu-bio-toulouse.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Miel de Montagne Bio Savoie",
+      "ville": "Chambéry",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "miel@savoie-bio.fr",
+      "produits": "Miels bio altitude",
+      "site": "https://miel-savoie-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Lentilles Bio du Puy AOP",
+      "ville": "Le Puy-en-Velay",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "lentilles.puy@orange.fr",
+      "produits": "Lentilles vertes AOP bio",
+      "site": null,
+      "scoring": 10
+    },
+    {
+      "nom": "Herbes Sauvages Bio Cueillette",
+      "ville": "Cévennes",
+      "region": "Occitanie",
+      "email": "herbes@cevennes-bio.fr",
+      "produits": "Plantes sauvages bio cueillies",
+      "site": "https://herbes-cevennes-bio.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Truffes Bio Périgord Trufficulteur",
+      "ville": "Périgueux",
+      "region": "Nouvelle-Aquitaine",
+      "email": "truffes.perigord@wanadoo.fr",
+      "produits": "Truffes noires bio Périgord",
+      "site": null,
+      "scoring": 10
+    },
+    {
+      "nom": "Café Torréfaction Bio Équitable",
+      "ville": "Lille",
+      "region": "Hauts-de-France",
+      "email": "cafe@bio-lille.fr",
+      "produits": "Cafés bio torréfiés artisan",
+      "site": "https://cafe-bio-lille.fr",
+      "scoring": 10
+    },
+    {
+      "nom": "Ferme de la Bourdaisière",
+      "ville": "Montlouis-sur-Loire",
+      "region": "Centre-Val de Loire",
+      "email": "contact@labourdaisiere.com",
+      "produits": "Légumes bio, tomates anciennes",
+      "site": "https://www.labourdaisiere.com",
+      "scoring": 9
+    },
+    {
+      "nom": "Domaine de la Terre Rouge",
+      "ville": "Saint-Émilion",
+      "region": "Nouvelle-Aquitaine",
+      "email": "contact@terrouge.com",
+      "produits": "Vins bio biodynamie",
+      "site": "https://terrouge.com",
+      "scoring": 9
+    },
+    {
+      "nom": "Boulangerie Le Fournil d'Augustine",
+      "ville": "Uzès",
+      "region": "Occitanie",
+      "email": "contact@fournildaugustine.fr",
+      "produits": "Pains bio levain naturel",
+      "site": "https://fournildaugustine.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Maraîchage Les Jardins de Cocagne",
+      "ville": "Toulouse",
+      "region": "Occitanie",
+      "email": "contact@jardinscocagne31.org",
+      "produits": "Paniers légumes bio",
+      "site": "https://jardinscocagne31.org",
+      "scoring": 9
+    },
+    {
+      "nom": "Domaine Viticole Bio Ardèche",
+      "ville": "Vallon-Pont-d'Arc",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "contact@bio-ardeche-vins.fr",
+      "produits": "Vins bio IGP Ardèche",
+      "site": "https://bio-ardeche-vins.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Brasserie Artisanale Bio du Sud",
+      "ville": "Montpellier",
+      "region": "Occitanie",
+      "email": "contact@brasserie-bio-sud.com",
+      "produits": "Bières bio artisanales",
+      "site": "https://brasserie-bio-sud.com",
+      "scoring": 9
+    },
+    {
+      "nom": "Volailles Bio de Bresse",
+      "ville": "Bourg-en-Bresse",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "contact@volailles-bresse-bio.com",
+      "produits": "Poulets, chapons bio",
+      "site": "https://volailles-bresse-bio.com",
+      "scoring": 9
+    },
+    {
+      "nom": "Champignonnière Bio du Périgord",
+      "ville": "Sarlat",
+      "region": "Nouvelle-Aquitaine",
+      "email": "contact@champignons-perigord-bio.fr",
+      "produits": "Champignons bio truffes",
+      "site": "https://champignons-perigord-bio.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Traiteur Bio Végétarien Lyon",
+      "ville": "Lyon",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "contact@traiteur-bio-lyon.fr",
+      "produits": "Plats végétariens bio traiteur",
+      "site": "https://traiteur-bio-lyon.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Pâtes Artisanales Bio Italie France",
+      "ville": "Nice",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "email": "contact@pates-bio-nice.fr",
+      "produits": "Pâtes fraîches bio artisanales",
+      "site": "https://pates-bio-nice.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Sel de Guérande Bio Paludier",
+      "ville": "Guérande",
+      "region": "Pays de la Loire",
+      "email": "sel.guerande.bio@orange.fr",
+      "produits": "Fleur de sel bio artisan",
+      "site": null,
+      "scoring": 9
+    },
+    {
+      "nom": "Thés Bio Importateur Direct",
+      "ville": "Nantes",
+      "region": "Pays de la Loire",
+      "email": "the@bio-nantes.fr",
+      "produits": "Thés bio import direct",
+      "site": "https://thes-bio-nantes.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Kombucha Bio Fermentation",
+      "ville": "Marseille",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "email": "contact@kombucha-bio-marseille.fr",
+      "produits": "Kombucha bio artisanal",
+      "site": "https://kombucha-bio-marseille.fr",
+      "scoring": 9
+    },
+    {
+      "nom": "Quinoa Bio France Culture Locale",
+      "ville": "Anjou",
+      "region": "Pays de la Loire",
+      "email": "quinoa.france@orange.fr",
+      "produits": "Quinoa bio français",
+      "site": null,
+      "scoring": 9
+    },
+    {
+      "nom": "Fromagerie du Mont Ventoux",
+      "ville": "Bédoin",
+      "region": "Provence",
+      "email": "fromagerie.ventoux@gmail.com",
+      "produits": "Fromages de chèvre bio",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Les Ruchers du Luberon",
+      "ville": "Bonnieux",
+      "region": "Provence",
+      "email": "ruchers.luberon@orange.fr",
+      "produits": "Miels bio lavande, thym",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Conserverie La Coudre",
+      "ville": "Montségur",
+      "region": "Occitanie",
+      "email": "lacoudre@gmail.com",
+      "produits": "Conserves légumes bio artisanales",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Élevage Les Prés Verts",
+      "ville": "Aurillac",
+      "region": "Auvergne",
+      "email": "presverts.bio@wanadoo.fr",
+      "produits": "Viande bovine bio",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Les Fromages de Chèvre du Pays Basque",
+      "ville": "Espelette",
+      "region": "Nouvelle-Aquitaine",
+      "email": "chevre.basque@gmail.com",
+      "produits": "Fromages chèvre AOP",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "La Ferme des 4 Saisons",
+      "ville": "Annecy",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "ferme4saisons@orange.fr",
+      "produits": "Légumes bio montagne",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Confiturier de Haute-Provence",
+      "ville": "Manosque",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "email": "confiture.provence@wanadoo.fr",
+      "produits": "Confitures bio artisanales",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Les Jus de Fruits Bio Corse",
+      "ville": "Ajaccio",
+      "region": "Corse",
+      "email": "jus.corse.bio@orange.fr",
+      "produits": "Jus bio agrumes clémentines",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Maraîcher Bio Ile-de-France",
+      "ville": "Versailles",
+      "region": "Île-de-France",
+      "email": "maraicher.idf@gmail.com",
+      "produits": "Légumes bio circuits courts",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Pâtisserie Bio Sans Gluten",
+      "ville": "Bordeaux",
+      "region": "Nouvelle-Aquitaine",
+      "email": "contact@patisserie-bio-bordeaux.fr",
+      "produits": "Pâtisseries bio gluten-free",
+      "site": "https://patisserie-bio-bordeaux.fr",
+      "scoring": 8
+    },
+    {
+      "nom": "Élevage de Canards Bio Gers",
+      "ville": "Auch",
+      "region": "Occitanie",
+      "email": "canards.gers.bio@wanadoo.fr",
+      "produits": "Foie gras, magrets bio",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Châtaigneraie Bio Ardèche",
+      "ville": "Privas",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "chataignes.ardeche@orange.fr",
+      "produits": "Châtaignes, crème de marrons bio",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Verger Bio Normandie Pommes",
+      "ville": "Caen",
+      "region": "Normandie",
+      "email": "verger.normandie.bio@gmail.com",
+      "produits": "Pommes bio cidre jus",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Céréales Bio du Limousin",
+      "ville": "Limoges",
+      "region": "Nouvelle-Aquitaine",
+      "email": "cereales.limousin@wanadoo.fr",
+      "produits": "Farines bio blé ancien",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Épicerie Fine Bio Bretagne",
+      "ville": "Rennes",
+      "region": "Bretagne",
+      "email": "epicerie.bretagne.bio@orange.fr",
+      "produits": "Conserves bio produits bretons",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Plantes Aromatiques Bio Provence",
+      "ville": "Aix-en-Provence",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "email": "plantes.provence.bio@gmail.com",
+      "produits": "Thym, romarin, lavande bio",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Vinaigrier Bio Loire Valley",
+      "ville": "Tours",
+      "region": "Centre-Val de Loire",
+      "email": "vinaigre.loire@wanadoo.fr",
+      "produits": "Vinaigres bio artisanaux",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Glaces Artisanales Bio Alpes",
+      "ville": "Grenoble",
+      "region": "Auvergne-Rhône-Alpes",
+      "email": "glaces.alpes.bio@gmail.com",
+      "produits": "Glaces bio lait montagne",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Olives Bio Tapenade Provence",
+      "ville": "Aix-en-Provence",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "email": "olives.provence.bio@wanadoo.fr",
+      "produits": "Olives bio tapenade artisanale",
+      "site": null,
+      "scoring": 8
+    },
+    {
+      "nom": "Ferme Piscicole Bio des Landes",
+      "ville": "Biscarrosse",
+      "region": "Nouvelle-Aquitaine",
+      "email": "poissons.landes@gmail.com",
+      "produits": "Poissons d'eau douce bio",
+      "site": null,
+      "scoring": 7
+    },
+    {
+      "nom": "Savonnerie Artisanale Provence",
+      "ville": "Grasse",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "email": "savons.provence@gmail.com",
+      "produits": "Savons bio huiles essentielles",
+      "site": null,
+      "scoring": 7
+    }
+  ]
+}

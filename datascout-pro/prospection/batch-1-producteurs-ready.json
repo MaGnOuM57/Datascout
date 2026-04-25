@@ -1,0 +1,140 @@
+{
+  "batch_id": "batch-1-producteurs",
+  "created_at": "2026-04-25T21:24:32.544890",
+  "strategy": "petits_producteurs_bio",
+  "total": 10,
+  "warmup_schedule": "1 email per hour",
+  "start_time": "2026-04-25T21:34:32.544769",
+  "emails": [
+    {
+      "to": "ferme@fermedubec.com",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur La Ferme du Bec Hellouin en cherchant des producteurs bio en Normandie.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos maraîchage bio permaculture, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "La Ferme du Bec Hellouin",
+        "ville": "Le Bec-Hellouin",
+        "region": "Normandie",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-25T21:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "contact@fermedesaintemarthe.com",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Ferme de Sainte Marthe en cherchant des producteurs bio en Centre-Val de Loire.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos semences bio, légumes anciens, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Ferme de Sainte Marthe",
+        "ville": "Millançay",
+        "region": "Centre-Val de Loire",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-25T22:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "moulin@nyons-bio.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Huilerie Bio du Moulin en cherchant des producteurs bio en Auvergne-Rhône-Alpes.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos huile d'olive aop nyons bio, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Huilerie Bio du Moulin",
+        "ville": "Nyons",
+        "region": "Auvergne-Rhône-Alpes",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-25T23:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "bergerie@pyrenees-bio.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Bergerie Bio des Pyrénées en cherchant des producteurs bio en Occitanie.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos fromages brebis bio, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Bergerie Bio des Pyrénées",
+        "ville": "Luchon",
+        "region": "Occitanie",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T00:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "spiruline@languedoc-bio.com",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Spiruline Bio du Languedoc en cherchant des producteurs bio en Occitanie.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos spiruline bio française, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Spiruline Bio du Languedoc",
+        "ville": "Nîmes",
+        "region": "Occitanie",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T01:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "contact@safran-drome-bio.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Safran Bio de la Drôme en cherchant des producteurs bio en Auvergne-Rhône-Alpes.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos safran bio pistils, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Safran Bio de la Drôme",
+        "ville": "Montélimar",
+        "region": "Auvergne-Rhône-Alpes",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T02:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "escargots@bourgogne-bio.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Escargots Bio de Bourgogne en cherchant des producteurs bio en Bourgogne-Franche-Comté.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos escargots bio élevage, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Escargots Bio de Bourgogne",
+        "ville": "Dijon",
+        "region": "Bourgogne-Franche-Comté",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T03:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "houblon@alsace-bio.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Houblon Bio Alsace Brasseurs en cherchant des producteurs bio en Grand Est.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos houblon bio brasserie artisanale, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Houblon Bio Alsace Brasseurs",
+        "ville": "Strasbourg",
+        "region": "Grand Est",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T04:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "contact@chocolat-bio-paris.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Chocolaterie Bio Bean-to-Bar en cherchant des producteurs bio en Île-de-France.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos chocolats bio équitables, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Chocolaterie Bio Bean-to-Bar",
+        "ville": "Paris",
+        "region": "Île-de-France",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T05:34:32.544769",
+      "status": "pending"
+    },
+    {
+      "to": "tofu@bio-toulouse.fr",
+      "subject": "Votre réseau de restaurants bio est prêt",
+      "body": "Bonjour,\n\nJe suis tombé sur Tofu Bio Artisanal Soja Français en cherchant des producteurs bio en Occitanie.\n\nQuestion rapide : Vous cherchez à vendre plus en direct aux restaurants ?\n\nJ'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.\n\nChaque restaurant a :\n• Contact direct (email + téléphone)\n• Score intérêt bio/local (0-10)\n• Type de cuisine (pour matcher vos produits)\n\nPour vos tofu bio soja local, j'ai identifié au moins 15-20 restaurants ultra-pertinents.\n\n149€, livré en 24h. Garantie remboursement si pas adapté.\n\nIntéressé ? → https://ellievai.com\n\nBien cordialement,\nEllie VAI\ncontact@ellievai.com",
+      "prospect": {
+        "nom": "Tofu Bio Artisanal Soja Français",
+        "ville": "Toulouse",
+        "region": "Occitanie",
+        "scoring": 10
+      },
+      "scheduled_for": "2026-04-26T06:34:32.544769",
+      "status": "pending"
+    }
+  ]
+}

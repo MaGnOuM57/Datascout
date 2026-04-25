@@ -1,0 +1,46 @@
+Subject: {prenom}, votre réseau de restaurants bio est prêt
+
+---
+
+Bonjour{prenom_salutation},
+
+Je suis tombé sur {nom_entreprise} en cherchant des producteurs bio en {region}.
+
+Question rapide : Vous cherchez à vendre plus en direct aux restaurants ?
+
+J'ai une base de 100 restaurants bio/locavores en France (Paris, Lyon, Bordeaux, Marseille...) qui CHERCHENT activement des producteurs comme vous.
+
+Chaque restaurant a :
+• Contact direct (email + téléphone)
+• Score intérêt bio/local (0-10)  
+• Type de cuisine (pour matcher vos produits)
+
+Pour vos {produits}, j'ai identifié au moins 15-20 restaurants ultra-pertinents.
+
+149€, livré en 24h. Garantie remboursement si pas adapté.
+
+Intéressé ? → https://ellievai.com
+
+Bien cordialement,
+Ellie VAI
+contact@ellievai.com
+
+---
+
+VARIABLES:
+- {prenom} : Prénom du destinataire (ou vide si inconnu)
+- {prenom_salutation} : " [Prénom]" si connu, sinon ""
+- {nom_entreprise} : Nom de l'entreprise (ex: "La Ferme du Bec Hellouin")
+- {region} : Région (ex: "Normandie")
+- {produits} : Type de produits (ex: "légumes bio permaculture")
+
+PERSONNALISATION:
+- Ligne 3 : Mention de l'entreprise trouvée
+- Ligne 11 : Mention des produits spécifiques
+- Ligne 13 : Estimation personnalisée du matching
+
+TONE:
+- Direct, pas de fluff
+- Pain point clair (vendre plus en direct)
+- Valeur immédiate (contacts ready)
+- Garantie (réduit risque)

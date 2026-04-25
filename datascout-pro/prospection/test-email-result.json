@@ -1,0 +1,13 @@
+{
+  "test_email": true,
+  "sent_at": "2026-04-25T21:25:47.466774",
+  "email_id": "7f479a37-8201-45ec-8680-d471c81745c5",
+  "to": "ferme@fermedubec.com",
+  "prospect": {
+    "nom": "La Ferme du Bec Hellouin",
+    "ville": "Le Bec-Hellouin",
+    "region": "Normandie",
+    "scoring": 10
+  },
+  "status": "sent_awaiting_verification"
+}

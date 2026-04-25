@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-04-25T21:21:23.800098",
+  "strategy": "petits_producteurs_bio",
+  "total": 10,
+  "prospects": [
+    {
+      "nom": "La Ferme du Bec Hellouin",
+      "ville": "Le Bec-Hellouin",
+      "region": "Normandie",
+      "email": "ferme@fermedubec.com",
+      "produits": "Maraîchage bio permaculture",
+      "scoring": 10,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur La Ferme du Bec Hellouin en cherchant des producteurs bio en Normandie."
+      }
+    },
+    {
+      "nom": "Ferme de Sainte Marthe",
+      "ville": "Millançay",
+      "region": "Centre-Val de Loire",
+      "email": "contact@fermedesaintemarthe.com",
+      "produits": "Semences bio, légumes anciens",
+      "scoring": 10,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Ferme de Sainte Marthe en cherchant des producteurs bio en Centre-Val de Loire."
+      }
+    },
+    {
+      "nom": "Ferme de la Bourdaisière",
+      "ville": "Montlouis-sur-Loire",
+      "region": "Centre-Val de Loire",
+      "email": "contact@labourdaisiere.com",
+      "produits": "Légumes bio, tomates anciennes",
+      "scoring": 9,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Ferme de la Bourdaisière en cherchant des producteurs bio en Centre-Val de Loire."
+      }
+    },
+    {
+      "nom": "Domaine de la Terre Rouge",
+      "ville": "Saint-Émilion",
+      "region": "Nouvelle-Aquitaine",
+      "email": "contact@terrouge.com",
+      "produits": "Vins bio biodynamie",
+      "scoring": 9,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Domaine de la Terre Rouge en cherchant des producteurs bio en Nouvelle-Aquitaine."
+      }
+    },
+    {
+      "nom": "Boulangerie Le Fournil d'Augustine",
+      "ville": "Uzès",
+      "region": "Occitanie",
+      "email": "contact@fournildaugustine.fr",
+      "produits": "Pains bio levain naturel",
+      "scoring": 9,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Boulangerie Le Fournil d'Augustine en cherchant des producteurs bio en Occitanie."
+      }
+    },
+    {
+      "nom": "Maraîchage Les Jardins de Cocagne",
+      "ville": "Toulouse",
+      "region": "Occitanie",
+      "email": "contact@jardinscocagne31.org",
+      "produits": "Paniers légumes bio",
+      "scoring": 9,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Maraîchage Les Jardins de Cocagne en cherchant des producteurs bio en Occitanie."
+      }
+    },
+    {
+      "nom": "Fromagerie du Mont Ventoux",
+      "ville": "Bédoin",
+      "region": "Provence",
+      "email": "fromagerie.ventoux@gmail.com",
+      "produits": "Fromages de chèvre bio",
+      "scoring": 8,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Fromagerie du Mont Ventoux en cherchant des producteurs bio en Provence."
+      }
+    },
+    {
+      "nom": "Les Ruchers du Luberon",
+      "ville": "Bonnieux",
+      "region": "Provence",
+      "email": "ruchers.luberon@orange.fr",
+      "produits": "Miels bio lavande, thym",
+      "scoring": 8,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Les Ruchers du Luberon en cherchant des producteurs bio en Provence."
+      }
+    },
+    {
+      "nom": "Conserverie La Coudre",
+      "ville": "Montségur",
+      "region": "Occitanie",
+      "email": "lacoudre@gmail.com",
+      "produits": "Conserves légumes bio artisanales",
+      "scoring": 8,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Conserverie La Coudre en cherchant des producteurs bio en Occitanie."
+      }
+    },
+    {
+      "nom": "Élevage Les Prés Verts",
+      "ville": "Aurillac",
+      "region": "Auvergne",
+      "email": "presverts.bio@wanadoo.fr",
+      "produits": "Viande bovine bio",
+      "scoring": 8,
+      "personnalisation": {
+        "prenom_estime": "Bonjour",
+        "accroche": "Je suis tombé sur Élevage Les Prés Verts en cherchant des producteurs bio en Auvergne."
+      }
+    }
+  ]
+}
