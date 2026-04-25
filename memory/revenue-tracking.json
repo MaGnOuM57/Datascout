@@ -9,23 +9,40 @@
     "open_rate": 0,
     "response_rate": 0,
     "last_batch": null,
-    "prospects_scraped": 15,
+    "prospects_scraped": 5,
     "next_batch_ready": true
   },
   "blockers": [
     {
-      "type": "email_sending",
-      "description": "Resend domain not configured. Awaiting user choice: A (Resend DNS), B (Gmail SMTP), or C (manual draft)",
+      "type": "resend_dns_propagation",
+      "description": "Resend domain ellievai.com ajouté, DNS propagation en cours depuis 1h. Status: 'Looking for DNS records'. ETA: 1-3h selon OVH.",
       "severity": "critical",
-      "created_at": "2026-04-25T17:40:00Z"
+      "created_at": "2026-04-25T19:00:00Z",
+      "status_update": "2026-04-25T20:02:00Z",
+      "eta_resolution": "1-3h (propagation DNS OVH)"
     }
   ],
+  "stripe_status": {
+    "mode": "PRODUCTION",
+    "updated_at": "2026-04-25T20:02:00Z",
+    "payment_links_ready": false,
+    "products": ["Pro 149€", "Végé 99€", "Boutiques 79€", "Caves 79€"]
+  },
   "next_actions": [
-    "Configure email sending (pending user choice A/B/C)",
-    "Send first batch 15 emails once unblocked",
-    "Scrape additional 35 prospects to reach 50 total",
-    "Setup Stripe payment links (4 products)",
-    "Configure Google Analytics tracking"
+    "PARALLEL: Scraper batch 2 (35 prospects additionnels)",
+    "PARALLEL: Vérifier Stripe prod payment links",
+    "PARALLEL: Préparer emails batch 2-3 (personnalisés)",
+    "PARALLEL: Optimiser site (CTA, urgency, social proof)",
+    "WAITING: Resend DNS verification (auto, 1-3h)",
+    "AUTO: Envoyer batch 1 dès Resend verified"
   ],
-  "last_update": "2026-04-25T17:40:00Z"
+  "migration_status": {
+    "rebranding_completed": true,
+    "dns_ovh_configured": true,
+    "vercel_configured": true,
+    "resend_domain_added": true,
+    "resend_verified": false,
+    "stripe_production": true
+  },
+  "last_update": "2026-04-25T20:05:00Z"
 }

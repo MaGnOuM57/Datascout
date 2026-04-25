@@ -1,0 +1,152 @@
+[
+  {
+    "company": "Les Jardins de Cocagne",
+    "email": "commercial@jardinsdecocagne.fr",
+    "first_name": "Sophie",
+    "city": "Lyon",
+    "type": "Réseau maraîchers bio insertion",
+    "size": "100+ jardins France, réseau structuré",
+    "scoring": 9,
+    "reason": "Réseau national, déjà circuits courts, recherche débouchés restaurants pour 100+ producteurs"
+  },
+  {
+    "company": "Biomonde Distribution",
+    "email": "contact@biomonde-distribution.fr",
+    "first_name": "Marc",
+    "city": "Toulouse",
+    "type": "Grossiste bio Sud-Ouest",
+    "size": "15M€ CA, 80 clients pros",
+    "scoring": 9,
+    "reason": "Gros acteur régional, équipe commerciale structurée, déjà B2B restaurants"
+  },
+  {
+    "company": "La Vie Claire Pro",
+    "email": "bpro@lavieclairer.fr",
+    "first_name": "Julien",
+    "city": "Paris",
+    "type": "Grossiste bio national",
+    "size": "250 magasins, division B2B",
+    "scoring": 8,
+    "reason": "Grande enseigne, division pros récente, cherche développer débouchés restaurants"
+  },
+  {
+    "company": "Ferme de Sainte Marthe",
+    "email": "contact@fermedesaintemarthe.com",
+    "first_name": "Pierre",
+    "city": "Angers",
+    "type": "Producteur semences bio",
+    "size": "Leader France, réseau maraîchers",
+    "scoring": 8,
+    "reason": "Connait tous maraîchers bio France, pourrait redistribuer liste à réseau clients"
+  },
+  {
+    "company": "ProNatura",
+    "email": "hello@pronatura.fr",
+    "first_name": "Laura",
+    "city": "Bordeaux",
+    "type": "Plateforme producteurs-restaurants",
+    "size": "Startup 2024, 200 users actifs",
+    "scoring": 10,
+    "reason": "Tech-savvy, modèle marketplace, besoin data pour matcher producteurs-restos"
+  },
+  {
+    "company": "Les Comptoirs de la Bio",
+    "email": "commercial@comptoirsdelabio.fr",
+    "first_name": "Thomas",
+    "city": "Nantes",
+    "type": "Grossiste bio Pays de Loire",
+    "size": "8M€ CA, 50 clients restos",
+    "scoring": 9,
+    "reason": "Fort réseau restaurants région, budget confirmé, développement commercial actif"
+  },
+  {
+    "company": "Biocoop Restauration",
+    "email": "restauration@biocoop.fr",
+    "first_name": "Marie",
+    "city": "Paris",
+    "type": "Branche B2B Biocoop",
+    "size": "Division nationale restauration",
+    "scoring": 10,
+    "reason": "Structure nationale, budget énorme, division spécifique restaurants à développer"
+  },
+  {
+    "company": "Terre Azur",
+    "email": "contact@terreazur.com",
+    "first_name": "François",
+    "city": "Nice",
+    "type": "Producteur maraîcher bio PACA",
+    "size": "50 ha, 15 employés, 30 restos clients",
+    "scoring": 9,
+    "reason": "Gros producteur, déjà vend restaurants, cherche élargir clientèle Côte d'Azur"
+  },
+  {
+    "company": "Ferme du Bec Hellouin",
+    "email": "contact@fermedubec.com",
+    "first_name": "Perrine",
+    "city": "Normandie",
+    "type": "Ferme permaculture bio référence",
+    "size": "Référence nationale, formation",
+    "scoring": 8,
+    "reason": "Connue secteur bio, réseau énorme (formations), pourrait partager à alumni"
+  },
+  {
+    "company": "SO.BIO",
+    "email": "contact@sobio.fr",
+    "first_name": "Damien",
+    "city": "Montpellier",
+    "type": "Grossiste bio Occitanie",
+    "size": "12M€ CA, 100+ clients pros",
+    "scoring": 9,
+    "reason": "Acteur majeur Sud, fort développement B2B, recherche outils prospection"
+  },
+  {
+    "company": "Vins en Vrac",
+    "email": "pro@vinsenvrac.com",
+    "first_name": "Camille",
+    "city": "Lyon",
+    "type": "Caviste bio/naturel B2B",
+    "size": "150 restos clients, vrac uniquement",
+    "scoring": 9,
+    "reason": "Niche vin naturel restaurants, déjà 150 clients, cherche nouveaux débouchés"
+  },
+  {
+    "company": "La Fourche Pro",
+    "email": "b2b@lafourche.fr",
+    "first_name": "Boris",
+    "city": "Paris",
+    "type": "Marketplace bio en ligne",
+    "size": "50k clients B2C, lance division B2B",
+    "scoring": 10,
+    "reason": "Startup connue, tech-first, lance B2B restaurants 2026, besoin data"
+  },
+  {
+    "company": "Ferme de Bord",
+    "email": "contact@fermedebord.fr",
+    "first_name": "Émilie",
+    "city": "Strasbourg",
+    "type": "Producteur laitier bio Alsace",
+    "size": "200 vaches, fromages artisanaux",
+    "scoring": 8,
+    "reason": "Produits haut de gamme, vend déjà quelques restos gastronomiques, cherche élargir"
+  },
+  {
+    "company": "GreenFresh",
+    "email": "hello@greenfresh.io",
+    "first_name": "Alexandre",
+    "city": "Paris",
+    "type": "Startup livraison producteurs-restos",
+    "size": "Levée 2M€, 80 restos clients",
+    "scoring": 10,
+    "reason": "VC-backed, hyper croissance, besoin data pour sourcing nouveaux restaurants"
+  },
+  {
+    "company": "Les Maraîchers du Coin",
+    "email": "contact@maraichers-du-coin.fr",
+    "first_name": "Léa",
+    "city": "Marseille",
+    "type": "Collectif maraîchers PACA",
+    "size": "20 producteurs, vente groupée",
+    "scoring": 9,
+    "reason": "Collectif organisé, mutualise commercial, pourrait acheter pour tout le groupe"
+  }
+]
