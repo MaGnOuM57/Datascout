@@ -4,11 +4,12 @@
     "calendar": null,
     "weather": 1745834239,
     "project_status": 1745842800,
-    "git_workspace": 1745850000,
-    "business": 1745848320
+    "git_workspace": 1745851200,
+    "business": 1745851200,
+    "revenue": 1745851200
   },
-  "lastProactiveMessage": 1745848320,
-  "checksToday": 7,
+  "lastProactiveMessage": 1745851200,
+  "checksToday": 8,
   "lastNightlyReview": null,
-  "notes": "17:00 - Git clean (8be5e26). Site live. Weekend mode. Next business check 18h. HEARTBEAT_OK."
+  "notes": "17:00 - BLOCKER CRITIQUE alerté: email config manquante. 0€ revenue, 15 prospects ready. Attente choix user A/B/C pour débloquer prospection."
 }
