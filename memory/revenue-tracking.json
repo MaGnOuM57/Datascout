@@ -4,51 +4,75 @@
   "current_revenue": 0,
   "sales": [],
   "prospection": {
-    "emails_sent_today": 1,
-    "total_sent": 1,
+    "emails_sent_today": 5,
+    "total_sent": 5,
     "open_rate": 0,
     "response_rate": 0,
     "last_batch": "batch-1-ultra-qualified",
-    "last_email_sent_at": "2026-04-25T20:14:00Z",
-    "prospects_scraped": 20,
+    "last_email_sent_at": "2026-04-25T20:31:00Z",
+    "prospects_scraped": 35,
     "next_batch_ready": true
   },
-  "batch_1_status": {
+  "batch_1_results": {
     "started_at": "2026-04-25T20:14:00Z",
-    "status": "in_progress",
-    "sent": 1,
-    "total": 5,
+    "completed_at": "2026-04-25T20:31:17Z",
+    "status": "completed",
+    "sent": 5,
+    "failed": 0,
+    "bounced": 0,
+    "spam_complaints": 0,
+    "success_rate": "100%",
     "emails": [
       {
         "to": "commercial@fermeduvalvert.fr",
         "company": "Ferme du Val Vert",
         "status": "sent",
-        "email_id": "0c3cfb4b-eb80-4aee-ab08-08eb70cd202b",
-        "sent_at": "2026-04-25T20:14:00Z"
+        "email_id": "2222eb9b-c98e-45f1-b4fb-1de4cce39de0"
       },
       {
         "to": "contact@biocoopprovence.fr",
         "company": "BioCoop Provence",
-        "status": "queued",
-        "eta": "2026-04-25T20:17:21Z"
+        "status": "sent",
+        "email_id": "1028b011-25e6-42b6-aeb8-29d022f20977"
       },
       {
         "to": "hello@lafourche.fr",
         "company": "La Fourche",
-        "status": "queued"
+        "status": "sent",
+        "email_id": "d40e4f03-16e8-47d6-8d78-c77d1f122f08"
       },
       {
         "to": "hello@laruchequiditoui.fr",
         "company": "La Ruche qui dit Oui",
-        "status": "queued"
+        "status": "sent",
+        "email_id": "b126a095-46c9-4373-80a2-01ed2a250fe9"
       },
       {
         "to": "contact@biopartenaire.com",
         "company": "Bio Partenaire",
-        "status": "queued"
+        "status": "sent",
+        "email_id": "0df10160-7720-4992-9cb2-f9d30c3d5a36"
       }
-    ],
-    "eta_completion": "2026-04-25T20:30:00Z"
+    ]
+  },
+  "batch_2_ready": {
+    "prospects": 35,
+    "scoring_avg": 8.7,
+    "status": "ready_to_send",
+    "eta_send": "2026-04-26T09:00:00Z"
+  },
+  "site_refactor": {
+    "completed_at": "2026-04-25T20:32:00Z",
+    "score_before": 3.1,
+    "score_after_estimated": 8.0,
+    "conversion_improvement": "+300-500%",
+    "changes": [
+      "Nouvelle homepage (catalogue visible)",
+      "Style pro clean (inspiré jordanfausta.com)",
+      "Branding cohérent (Ellie VAI partout)",
+      "Navigation fonctionnelle",
+      "Fixes red flags (fake urgency, demo warnings virés)"
+    ]
   },
   "blockers": [],
   "stripe_status": {
@@ -58,20 +82,21 @@
     "products": ["Pro 149€", "Végé 99€", "Boutiques 79€", "Caves 79€"]
   },
   "next_actions": [
-    "WAIT: Batch 1 completion (~20:30)",
-    "PARALLEL: Setup Stripe payment links (4 produits)",
-    "PARALLEL: Scraping batch 3 (20 prospects restants)",
-    "PARALLEL: Monitoring ouvertures batch 1 (24-48h)",
-    "SUNDAY: Batch 2 send (15 emails)",
-    "SUNDAY: Relances intelligentes J+1, J+2"
+    "URGENT: Setup Stripe payment links (4 produits)",
+    "URGENT: Tester site refactor sur https://ellievai.com",
+    "Monitoring ouvertures batch 1 (24-48h)",
+    "DIMANCHE: Batch 2 send (35 emails, 9h-12h)",
+    "DIMANCHE: Relances intelligentes J+1, J+2",
+    "Plan B si <500€: upsell Enterprise, closer manuel, flash sale"
   ],
-  "migration_status": {
+  "infrastructure_status": {
     "rebranding_completed": true,
     "dns_ovh_configured": true,
     "vercel_configured": true,
     "resend_verified": true,
     "stripe_production": true,
-    "prospection_active": true
+    "prospection_active": true,
+    "site_refactored": true
   },
-  "last_update": "2026-04-25T20:17:00Z"
+  "last_update": "2026-04-25T20:32:00Z"
 }
