@@ -4,12 +4,12 @@
     "calendar": null,
     "weather": 1745834239,
     "project_status": 1745842800,
-    "git_workspace": 1745851200,
-    "business": 1745851200,
-    "revenue": 1745851200
+    "git_workspace": 1745860800,
+    "business": 1745860800,
+    "revenue": 1745860800
   },
-  "lastProactiveMessage": 1745851200,
-  "checksToday": 8,
+  "lastProactiveMessage": 1745860800,
+  "checksToday": 9,
   "lastNightlyReview": null,
-  "notes": "17:00 - BLOCKER CRITIQUE alerté: email config manquante. 0€ revenue, 15 prospects ready. Attente choix user A/B/C pour débloquer prospection."
+  "notes": "21:00 - ALERTE CRITIQUE: Double blocage revenue - (1) DNS pas configuré, site inaccessible (2) Bounce rate 60% batch 1, réputation domaine impactée. Batch 2 suspendu. Plan de sauvetage proposé."
 }
