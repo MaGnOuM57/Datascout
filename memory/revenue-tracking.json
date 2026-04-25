@@ -1,0 +1,31 @@
+{
+  "objective": 500,
+  "deadline": "2026-04-27T23:59:00Z",
+  "current_revenue": 0,
+  "sales": [],
+  "prospection": {
+    "emails_sent_today": 0,
+    "total_sent": 0,
+    "open_rate": 0,
+    "response_rate": 0,
+    "last_batch": null,
+    "prospects_scraped": 15,
+    "next_batch_ready": true
+  },
+  "blockers": [
+    {
+      "type": "email_sending",
+      "description": "Resend domain not configured. Awaiting user choice: A (Resend DNS), B (Gmail SMTP), or C (manual draft)",
+      "severity": "critical",
+      "created_at": "2026-04-25T17:40:00Z"
+    }
+  ],
+  "next_actions": [
+    "Configure email sending (pending user choice A/B/C)",
+    "Send first batch 15 emails once unblocked",
+    "Scrape additional 35 prospects to reach 50 total",
+    "Setup Stripe payment links (4 products)",
+    "Configure Google Analytics tracking"
+  ],
+  "last_update": "2026-04-25T17:40:00Z"
+}
