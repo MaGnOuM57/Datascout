@@ -1,130 +1,81 @@
 {
-  "lastUpdate": "2026-04-25T14:00:00Z",
-  "business": {
-    "revenue": {
-      "total": 0,
-      "target": 500,
-      "currency": "EUR"
+  "project": "DataScout Pro",
+  "start_date": "2026-04-25",
+  "last_updated": "2026-04-25T14:20:00Z",
+  
+  "infrastructure": {
+    "github_status": "connected",
+    "vercel_status": "live",
+    "vercel_url": "https://datascout-pro.vercel.app",
+    "email_provider": "Resend",
+    "email_status": "configured",
+    "email_quota": "3000/month"
+  },
+  
+  "prospects": {
+    "total_identified": 77,
+    "segmentation": {
+      "fournisseurs_bio": 20,
+      "equipementiers": 25,
+      "grossistes": 32
     },
-    "sales": {
-      "count": 0,
-      "target": 3,
-      "avgTicket": 149
+    "avg_score": 8.1
+  },
+  
+  "emails": {
+    "total_sent": 0,
+    "total_opened": 0,
+    "total_replied": 0,
+    "open_rate": "0%",
+    "reply_rate": "0%",
+    "templates_created": 3,
+    "last_batch": null
+  },
+  
+  "conversions": {
+    "leads_interested": 0,
+    "demos_scheduled": 0,
+    "sales_closed": 0,
+    "revenue_total": "0€",
+    "avg_deal_size": "149€"
+  },
+  
+  "milestones": [
+    {
+      "date": "2026-04-25T10:30:00Z",
+      "event": "MVP Created",
+      "details": "Full MVP in 3h - Landing page + prospects + docs"
     },
-    "conversion": {
-      "prospectsContacted": 0,
-      "emailsSent": 0,
-      "responses": 0,
-      "meetings": 0,
-      "conversions": 0,
-      "conversionRate": 0
+    {
+      "date": "2026-04-25T14:05:00Z",
+      "event": "GitHub Connected",
+      "details": "Repo synced: https://github.com/MaGnOuM57/Datascout.git"
+    },
+    {
+      "date": "2026-04-25T14:12:00Z",
+      "event": "Vercel Deployed",
+      "details": "Live at https://datascout-pro.vercel.app"
+    },
+    {
+      "date": "2026-04-25T14:18:00Z",
+      "event": "Resend Configured",
+      "details": "Email sending operational, test email successful"
+    }
+  ],
+  
+  "goals": {
+    "week_1": {
+      "target_emails": 50,
+      "target_sales": "1-2",
+      "target_revenue": "149-298€"
+    },
+    "month_1": {
+      "target_emails": 200,
+      "target_sales": "5-8",
+      "target_revenue": "745-1192€"
     }
   },
-  "prospecting": {
-    "totalProspects": 77,
-    "batches": [
-      {
-        "date": "2026-04-25",
-        "time": "11:36",
-        "count": 15,
-        "file": "prospects/2026-04-25-batch-11h.md",
-        "avgScore": 8.2
-      },
-      {
-        "date": "2026-04-25",
-        "time": "14:00",
-        "count": 12,
-        "file": "prospects/2026-04-25-batch-14h.md",
-        "avgScore": 8.0
-      }
-    ],
-    "bySegment": {
-      "fournisseursBio": 20,
-      "equipementCuisine": 8,
-      "distributeursMaree": 6,
-      "vinsBoissons": 8,
-      "fintech": 5,
-      "grossistes": 15,
-      "autres": 15
-    },
-    "topPriority": [
-      {
-        "name": "Electrolux Professional",
-        "score": 9,
-        "segment": "equipement",
-        "reason": "Gros budgets, ROI évident"
-      },
-      {
-        "name": "Sunday",
-        "score": 9,
-        "segment": "fintech",
-        "reason": "Hyper-croissance, CAC élevé"
-      },
-      {
-        "name": "Terroirs d'Avenir",
-        "score": 9,
-        "segment": "fournisseur",
-        "reason": "Réseau chefs Michelin"
-      },
-      {
-        "name": "Biocoop Entreprises",
-        "score": 9,
-        "segment": "grossiste",
-        "reason": "Leader bio France"
-      },
-      {
-        "name": "Zenchef",
-        "score": 8,
-        "segment": "saas",
-        "reason": "Pipeline acquisition constant"
-      }
-    ]
-  },
-  "outreach": {
-    "emailTemplates": 3,
-    "personalizedEmails": 5,
-    "emailsSent": 0,
-    "scheduledSend": "2026-04-28T09:00:00Z"
-  },
-  "mvp": {
-    "landingPageDeployed": false,
-    "stripeConfigured": false,
-    "pdfCreated": false,
-    "readyToSell": false,
-    "blockingIssues": [
-      "Landing page not deployed (Vercel/Netlify)",
-      "Stripe payment link not configured",
-      "PDF report not converted from markdown"
-    ]
-  },
-  "milestones": {
-    "firstProspectBatch": {
-      "date": "2026-04-25T11:36:00Z",
-      "achieved": true
-    },
-    "firstColdEmails": {
-      "date": "2026-04-25T14:00:00Z",
-      "achieved": true
-    },
-    "mvpLive": {
-      "achieved": false,
-      "targetDate": "2026-04-26"
-    },
-    "firstSale": {
-      "achieved": false,
-      "targetDate": "2026-05-02"
-    }
-  },
-  "automation": {
-    "cronJobsActive": true,
-    "telegramConnected": true,
-    "gitAutoCommit": true,
-    "emailAutomation": false
-  },
-  "timeline": {
-    "startDate": "2026-04-24",
-    "validationDeadline": "2026-05-09",
-    "daysElapsed": 1,
-    "daysRemaining": 14
-  }
+  
+  "validation_deadline": "2026-05-09",
+  "days_remaining": 14
 }
