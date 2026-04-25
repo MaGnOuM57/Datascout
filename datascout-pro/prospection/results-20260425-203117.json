@@ -1,0 +1,47 @@
+{
+  "sent": [
+    {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "2222eb9b-c98e-45f1-b4fb-1de4cce39de0"
+      },
+      "email": "commercial@fermeduvalvert.fr"
+    },
+    {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "1028b011-25e6-42b6-aeb8-29d022f20977"
+      },
+      "email": "contact@biocoopprovence.fr"
+    },
+    {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "d40e4f03-16e8-47d6-8d78-c77d1f122f08"
+      },
+      "email": "hello@lafourche.fr"
+    },
+    {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "b126a095-46c9-4373-80a2-01ed2a250fe9"
+      },
+      "email": "hello@laruchequiditoui.fr"
+    },
+    {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "0df10160-7720-4992-9cb2-f9d30c3d5a36"
+      },
+      "email": "contact@biopartenaire.com"
+    }
+  ],
+  "failed": [],
+  "bounced": [],
+  "spam_complaints": 0
+}

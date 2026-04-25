@@ -3,538 +3,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ellie VAI - Convertissez 3-5 Restaurants Bio en Clients ce Mois</title>
-    <meta name="description" content="100 décideurs restaurants bio pré-qualifiés + scoring IA + scripts de vente. Économisez 20h de prospection. Garantie 30 jours.">
+    <title>Ellie VAI - Bases de Données Restaurants Qualifiées France</title>
+    <meta name="description" content="Trouvez vos clients restaurants en 1 clic. Bases qualifiées + scoring IA + scripts de vente. Producteurs bio, grossistes, fournisseurs.">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Ellie VAI - 3-5 Nouveaux Clients Restaurants ce Mois">
-    <meta property="og:description" content="Liste vérifiée 100 restaurants bio/local + scoring IA. Économisez 20h de prospection.">
+    <meta property="og:title" content="Ellie VAI - Leads Restaurants Qualifiés">
+    <meta property="og:description" content="Bases de données restaurants + scoring IA. Économisez 20h de prospection par mois.">
     <meta property="og:type" content="website">
     
     <style>
-        :root {
-            --primary: #3B82F6;
-            --primary-dark: #2563EB;
-            --success: #10B981;
-            --gray-50: #F9FAFB;
-            --gray-100: #F3F4F6;
-            --gray-200: #E5E7EB;
-            --gray-600: #4B5563;
-            --gray-900: #111827;
-        }
-        
+        /* Reset & Base */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
+        :root {
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
+            --secondary: #EC4899;
+            --success: #10B981;
+            --gray-50: #FAFAFA;
+            --gray-100: #F5F5F5;
+            --gray-200: #E5E5E5;
+            --gray-400: #A3A3A3;
+            --gray-600: #525252;
+            --gray-900: #171717;
+            --white: #FFFFFF;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: var(--gray-900);
-            background: white;
+            background: var(--white);
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .container-narrow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
         
         /* Header */
         .header {
-            background: white;
+            background: var(--white);
             border-bottom: 1px solid var(--gray-200);
-            padding: 16px 0;
+            padding: 20px 0;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
         }
         
         .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         
         .logo {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 700;
             color: var(--gray-900);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logo span {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
         }
         
         .nav a {
-            margin-left: 32px;
             color: var(--gray-600);
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
         }
         
         .nav a:hover {
             color: var(--primary);
         }
         
-        /* Hero Section */
-        .hero {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 24px;
-            text-align: center;
+        .nav .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
         }
         
-        .badge {
+        .nav .btn-primary:hover {
+            background: var(--primary-dark);
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px 0;
+            text-align: center;
+            background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+        }
+        
+        .hero-badge {
             display: inline-block;
-            background: var(--gray-100);
-            color: var(--gray-600);
-            padding: 6px 12px;
-            border-radius: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 16px;
+            border-radius: 24px;
             font-size: 13px;
-            font-weight: 500;
-            margin-bottom: 24px;
+            font-weight: 600;
+            margin-bottom: 32px;
+            letter-spacing: 0.5px;
         }
         
         .hero h1 {
-            font-size: 56px;
-            font-weight: 700;
+            font-size: 64px;
+            font-weight: 800;
             line-height: 1.1;
             margin-bottom: 24px;
             color: var(--gray-900);
+            letter-spacing: -1px;
         }
         
-        .hero .highlight {
-            color: var(--primary);
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
-        .hero .subtitle {
+        .hero p {
             font-size: 20px;
             color: var(--gray-600);
+            margin-bottom: 40px;
             max-width: 700px;
-            margin: 0 auto 40px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
         }
         
-        .cta-group {
+        .hero-cta {
             display: flex;
             gap: 16px;
             justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
         }
         
-        .btn-primary {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 14px 32px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
+        .btn {
+            padding: 16px 32px;
+            border-radius: 12px;
             font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             transition: all 0.2s;
             border: none;
             cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
         }
         
         .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-1px);
-            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
         }
         
         .btn-secondary {
-            display: inline-block;
-            background: white;
+            background: var(--white);
             color: var(--gray-900);
-            padding: 14px 32px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            border: 1px solid var(--gray-200);
-            transition: all 0.2s;
+            border: 2px solid var(--gray-200);
         }
         
         .btn-secondary:hover {
-            border-color: var(--gray-900);
-        }
-        
-        .trust-line {
-            margin-top: 32px;
-            font-size: 14px;
-            color: var(--gray-600);
-        }
-        
-        /* Pricing Section */
-        .pricing-section {
-            background: var(--gray-50);
-            padding: 80px 24px;
-        }
-        
-        .pricing-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .pricing-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        
-        .pricing-header h2 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .pricing-card {
-            background: white;
-            border: 2px solid var(--gray-200);
-            border-radius: 12px;
-            padding: 32px;
-            transition: all 0.3s;
-        }
-        
-        .pricing-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        
-        .pricing-card.featured {
             border-color: var(--primary);
-            position: relative;
-        }
-        
-        .pricing-card.featured::before {
-            content: 'POPULAIRE';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 4px 16px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-        
-        .tier-name {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        
-        .tier-description {
-            font-size: 14px;
-            color: var(--gray-600);
-            margin-bottom: 24px;
-        }
-        
-        .tier-price {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-        
-        .tier-price .currency {
-            font-size: 24px;
-            vertical-align: super;
-        }
-        
-        .tier-features {
-            list-style: none;
-            margin-bottom: 32px;
-        }
-        
-        .tier-features li {
-            padding: 12px 0;
-            display: flex;
-            align-items: flex-start;
-            font-size: 14px;
-        }
-        
-        .tier-features li::before {
-            content: '✓';
-            color: var(--success);
-            font-weight: bold;
-            margin-right: 12px;
-            flex-shrink: 0;
-        }
-        
-        /* Social Proof */
-        .social-proof {
-            padding: 80px 24px;
-            background: white;
-        }
-        
-        .testimonial-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 32px;
-        }
-        
-        .testimonial {
-            background: var(--gray-50);
-            padding: 32px;
-            border-radius: 12px;
-            border-left: 4px solid var(--primary);
-        }
-        
-        .testimonial-text {
-            font-size: 16px;
-            line-height: 1.7;
-            margin-bottom: 24px;
-            color: var(--gray-900);
-        }
-        
-        .testimonial-metric {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--success);
-            margin-bottom: 16px;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .author-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--gray-200);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
             color: var(--primary);
         }
         
-        .author-info {
-            flex: 1;
+        /* Stats Section */
+        .stats {
+            padding: 60px 0;
+            background: var(--white);
         }
         
-        .author-name {
-            font-weight: 600;
-            font-size: 14px;
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
         }
         
-        .author-title {
-            font-size: 13px;
+        .stat-item h3 {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .stat-item p {
             color: var(--gray-600);
+            font-size: 15px;
         }
         
-        /* Features */
-        .features {
-            padding: 80px 24px;
+        /* Products Section */
+        .products {
+            padding: 100px 0;
             background: var(--gray-50);
         }
         
-        .features-container {
-            max-width: 1200px;
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--gray-900);
+        }
+        
+        .section-header p {
+            font-size: 18px;
+            color: var(--gray-600);
+            max-width: 600px;
             margin: 0 auto;
         }
         
-        .features-grid {
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 32px;
-            margin-top: 48px;
         }
         
-        .feature-card {
-            background: white;
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
             padding: 32px;
-            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            border: 1px solid var(--gray-200);
         }
         
-        .feature-icon {
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+        
+        .product-icon {
             width: 48px;
             height: 48px;
-            background: var(--primary);
-            border-radius: 8px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
         
-        .feature-title {
-            font-size: 18px;
-            font-weight: 600;
+        .product-card h3 {
+            font-size: 22px;
+            font-weight: 700;
             margin-bottom: 12px;
+            color: var(--gray-900);
         }
         
-        .feature-description {
-            font-size: 14px;
+        .product-card p {
             color: var(--gray-600);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-200);
+        }
+        
+        .product-price {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .product-link {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .product-link:hover {
+            gap: 8px;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .step {
+            text-align: center;
+        }
+        
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            margin: 0 auto 24px auto;
+        }
+        
+        .step h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--gray-900);
+        }
+        
+        .step p {
+            color: var(--gray-600);
+            font-size: 15px;
             line-height: 1.6;
         }
         
-        /* Guarantee */
-        .guarantee {
-            max-width: 800px;
-            margin: 80px auto;
-            padding: 40px;
-            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
-            border-radius: 16px;
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             text-align: center;
-        }
-        
-        .guarantee-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        
-        .guarantee-text {
-            font-size: 16px;
-            color: var(--gray-600);
-            line-height: 1.7;
-        }
-        
-        /* Lead Magnet */
-        .lead-magnet {
-            background: var(--gray-900);
             color: white;
-            padding: 80px 24px;
-            text-align: center;
         }
         
-        .lead-magnet h2 {
-            font-size: 36px;
-            margin-bottom: 16px;
+        .cta-section h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 24px;
         }
         
-        .lead-magnet p {
-            font-size: 18px;
-            color: var(--gray-200);
-            margin-bottom: 32px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
         }
         
-        .lead-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            gap: 12px;
+        .cta-section .btn {
+            background: white;
+            color: var(--primary);
         }
         
-        .lead-form input {
-            flex: 1;
-            padding: 14px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-        }
-        
-        .lead-form button {
-            background: var(--primary);
-            color: white;
-            padding: 14px 32px;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 16px;
+        .cta-section .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
         
         /* Footer */
         .footer {
-            background: var(--gray-50);
-            padding: 60px 24px 40px;
-            border-top: 1px solid var(--gray-200);
+            background: var(--gray-900);
+            color: var(--gray-400);
+            padding: 60px 0 30px 0;
         }
         
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+        .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
         
-        .footer-section h3 {
-            font-size: 14px;
-            font-weight: 600;
+        .footer-col h4 {
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
             margin-bottom: 16px;
         }
         
-        .footer-section a {
-            display: block;
-            color: var(--gray-600);
-            text-decoration: none;
-            font-size: 14px;
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col li {
             margin-bottom: 12px;
         }
         
-        .footer-section a:hover {
-            color: var(--primary);
+        .footer-col a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        
+        .footer-col a:hover {
+            color: white;
         }
         
         .footer-bottom {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 40px;
-            border-top: 1px solid var(--gray-200);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
             text-align: center;
-            color: var(--gray-600);
             font-size: 14px;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 36px;
+                font-size: 40px;
             }
             
-            .hero .subtitle {
+            .hero p {
                 font-size: 18px;
             }
             
-            .cta-group {
-                flex-direction: column;
-                width: 100%;
+            .section-header h2 {
+                font-size: 32px;
             }
             
-            .btn-primary,
-            .btn-secondary {
-                width: 100%;
-                text-align: center;
+            .nav {
+                display: none;
             }
             
-            .pricing-grid {
+            .products-grid {
                 grid-template-columns: 1fr;
             }
             
-            .testimonial-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .lead-form {
-                flex-direction: column;
-            }
-            
-            .lead-form button {
-                width: 100%;
+            .stat-item h3 {
+                font-size: 36px;
             }
         }
     </style>
@@ -542,322 +489,242 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-content">
-            <div class="logo">Ellie VAI</div>
-            <nav class="nav">
-                <a href="#pricing">Tarifs</a>
-                <a href="#testimonials">Témoignages</a>
-                <a href="#garantie">Garantie</a>
-            </nav>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <span>Ellie VAI</span>
+                </a>
+                <nav class="nav">
+                    <a href="#products">Catalogue</a>
+                    <a href="#how-it-works">Comment ça marche</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#products" class="btn-primary">Voir les produits</a>
+                </nav>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="badge">🎯 Liste vérifiée avril 2026 • 99% contacts complets</div>
-        
-        <h1>
-            Convertissez <span class="highlight">3-5 Restaurants Bio</span><br/>
-            en Clients ce Mois-ci
-        </h1>
-        
-        <p class="subtitle">
-            100 décideurs pré-qualifiés + scoring IA + scripts de vente.<br/>
-            Économisez 20h de prospection. Garantie 30 jours.
-        </p>
-        
-        <div class="cta-group">
-            <a href="#pricing" class="btn-primary">📥 Voir les Offres</a>
-            <a href="#free" class="btn-secondary">✨ Essai Gratuit (10 restaurants)</a>
-        </div>
-        
-        <p class="trust-line">
-            ✓ Paiement sécurisé • ✓ Livraison instantanée • ✓ Garantie 30 jours + 50€ bonus
-        </p>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="features-container">
-            <div style="text-align: center; margin-bottom: 24px;">
-                <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">
-                    Chaque restaurant scoré, vérifié, prêt à appeler
-                </h2>
-                <p style="font-size: 18px; color: var(--gray-600); max-width: 700px; margin: 0 auto;">
-                    Nous avons fait le travail pour vous. Vous appelez uniquement ceux qui disent OUI au bio.
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">Scoring IA 0-10</h3>
-                    <p class="feature-description">
-                        Chaque restaurant évalué selon budget qualité, engagement bio, labels. Appelez les 9-10/10 en premier.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">✓</div>
-                    <h3 class="feature-title">99% Contacts Complets</h3>
-                    <p class="feature-description">
-                        Email + téléphone vérifiés main. Pas de "N/A", pas de contacts morts. Fraîcheur garantie.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3 class="feature-title">Segmentation Géo</h3>
-                    <p class="feature-description">
-                        Paris, Lyon, Bordeaux, Marseille, Nice, Toulouse... Prospectez là où vous livrez.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">💬</div>
-                    <h3 class="feature-title">Scripts Inclus</h3>
-                    <p class="feature-description">
-                        Templates emails testés (42% taux ouverture) + scripts téléphoniques + réponses objections.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⏱️</div>
-                    <h3 class="feature-title">Économisez 20h</h3>
-                    <p class="feature-description">
-                        Fini Google Maps, annuaires, validation manuelle. Concentrez-vous sur la vente.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3 class="feature-title">Updates Trimestriels</h3>
-                    <p class="feature-description">
-                        Les contacts changent vite. Nos listes sont rafraîchies tous les 3 mois (upgrade disponible).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof -->
-    <section class="social-proof" id="testimonials">
-        <div style="text-align: center; margin-bottom: 48px;">
-            <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">
-                Ce que disent nos clients
-            </h2>
-        </div>
-        
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <div class="testimonial-metric">15 000€ de CA en 3 semaines</div>
-                <p class="testimonial-text">
-                    "Le fichier m'a fait gagner 2 mois de prospection. J'ai appelé les 9-10/10 en premier : 5 rendez-vous, 3 signatures. La liste est à jour, les contacts répondent. ROI immédiat."
-                </p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">PD</div>
-                    <div class="author-info">
-                        <div class="author-name">Pierre Duroc</div>
-                        <div class="author-title">Producteur maraîcher bio • Ferme du Val Vert • Lyon</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonial">
-                <div class="testimonial-metric">8 nouveaux clients en 1 mois</div>
-                <p class="testimonial-text">
-                    "En tant que grossiste bio, j'avais besoin de débouchés qualifiés. Le scoring est précis, les restaurants correspondent vraiment au profil. J'ai stoppé toute prospection manuelle."
-                </p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">ML</div>
-                    <div class="author-info">
-                        <div class="author-name">Marc Lefebvre</div>
-                        <div class="author-title">Directeur Commercial • BioCoop Provence</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonial">
-                <div class="testimonial-metric">Gain de 25h/mois</div>
-                <p class="testimonial-text">
-                    "Avant je passais des heures sur Google Maps à valider si un restaurant était vraiment bio. Maintenant c'est fait. Les templates emails m'ont fait gagner un temps fou. Parfait."
-                </p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">SC</div>
-                    <div class="author-info">
-                        <div class="author-name">Sophie Chen</div>
-                        <div class="author-title">Fondatrice • FreshLocal (plateforme circuits courts)</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="pricing">
-        <div class="pricing-container">
-            <div class="pricing-header">
-                <h2>Choisissez votre formule</h2>
-                <p style="font-size: 18px; color: var(--gray-600);">
-                    Démarrez gratuit ou accédez à la liste complète immédiatement
-                </p>
-            </div>
-            
-            <div class="pricing-grid">
-                <!-- Starter -->
-                <div class="pricing-card">
-                    <div class="tier-name">Starter</div>
-                    <div class="tier-description">Testez avec une région</div>
-                    <div class="tier-price">
-                        <span class="currency">€</span>49
-                    </div>
-                    <ul class="tier-features">
-                        <li>25 restaurants (1 région au choix)</li>
-                        <li>Contacts email + téléphone vérifiés</li>
-                        <li>Scoring opportunité 0-10</li>
-                        <li>Templates emails inclus</li>
-                        <li>Support email</li>
-                    </ul>
-                    <a href="mailto:contact@ellievai.com?subject=Commande Starter 49€" class="btn-secondary" style="display: block; text-align: center;">
-                        Commander Starter
-                    </a>
-                </div>
-                
-                <!-- Pro (Featured) -->
-                <div class="pricing-card featured">
-                    <div class="tier-name">Pro</div>
-                    <div class="tier-description">La liste complète France</div>
-                    <div class="tier-price">
-                        <span class="currency">€</span>149
-                    </div>
-                    <ul class="tier-features">
-                        <li><strong>100 restaurants France entière</strong></li>
-                        <li>99% contacts complets (email + tél)</li>
-                        <li>Scoring IA + notes validation</li>
-                        <li>Guide utilisation 30 jours</li>
-                        <li>3 templates emails testés (42% taux)</li>
-                        <li>Scripts téléphoniques complets</li>
-                        <li>KPIs tracking Excel</li>
-                        <li><strong>Garantie 30j + 50€ bonus</strong></li>
-                    </ul>
-                    <a href="mailto:contact@ellievai.com?subject=Commande Pro 149€" class="btn-primary" style="display: block; text-align: center;">
-                        Télécharger Maintenant
-                    </a>
-                </div>
-                
-                <!-- Enterprise -->
-                <div class="pricing-card">
-                    <div class="tier-name">Enterprise</div>
-                    <div class="tier-description">Scale + support premium</div>
-                    <div class="tier-price">
-                        <span class="currency">€</span>499
-                    </div>
-                    <ul class="tier-features">
-                        <li><strong>500 restaurants multi-segments</strong></li>
-                        <li>Bio/Local + Végé + Gastronomiques</li>
-                        <li>Warm intros (on fait les présentations)</li>
-                        <li>Updates trimestriels inclus</li>
-                        <li>Dashboard interactif (Notion)</li>
-                        <li>1 call stratégique 30 min (onboarding)</li>
-                        <li>Support prioritaire <24h</li>
-                        <li>Accès communauté privée</li>
-                    </ul>
-                    <a href="mailto:contact@ellievai.com?subject=Demande Enterprise 499€" class="btn-secondary" style="display: block; text-align: center;">
-                        Demander un Devis
-                    </a>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 32px; color: var(--gray-600); font-size: 14px;">
-                ⚠️ Liste mise à jour trimestriellement. Prochaine MAJ : juillet 2026.<br/>
-                Les contacts changent vite dans la restauration. Achetez maintenant = prospectez 3 mois avant vos concurrents.
+        <div class="container">
+            <div class="hero-badge">🚀 L'IA qui voit avant vous</div>
+            <h1>
+                Trouvez vos clients restaurants<br>
+                <span class="gradient-text">en 1 clic</span>
+            </h1>
+            <p>
+                Bases de données qualifiées + scoring IA + scripts de vente.<br>
+                Économisez 20h de prospection par mois. Pour producteurs bio, grossistes et fournisseurs.
             </p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">
+                    📦 Voir le catalogue
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    En savoir plus
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Guarantee -->
-    <section class="guarantee" id="garantie">
-        <div class="guarantee-title">🛡️ Garantie Satisfait ou Remboursé RENFORCÉE 30 jours</div>
-        <p class="guarantee-text">
-            Si après 30 jours d'utilisation active (minimum 50 prospects contactés), vous convertissez ZÉRO client, 
-            nous vous remboursons intégralement + BONUS 50€ pour votre temps. 
-            Proof de démarche requis (fichier tracking fourni). 
-            Nous sommes ultra-confiants dans cette liste.
-        </p>
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>210+</h3>
+                    <p>Restaurants qualifiés</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Contacts décideurs</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20h</h3>
+                    <p>Économisées par mois</p>
+                </div>
+                <div class="stat-item">
+                    <h3>7-9/10</h3>
+                    <p>Scoring IA moyen</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Lead Magnet -->
-    <section class="lead-magnet" id="free">
-        <h2>✨ Essayez Gratuitement</h2>
-        <p>
-            Recevez 10 restaurants premium (emails masqués) pour tester la qualité.<br/>
-            Zéro engagement. Zéro carte bancaire.
-        </p>
-        <form class="lead-form" onsubmit="alert('Lead magnet en configuration. Contactez contact@ellievai.com pour recevoir votre échantillon gratuit.'); return false;">
-            <input type="email" placeholder="Votre email professionnel" required>
-            <button type="submit">Recevoir l'Échantillon</button>
-        </form>
-        <p style="margin-top: 16px; font-size: 13px; color: var(--gray-200);">
-            Pas de spam. Désinscription en 1 clic. RGPD compliant.
-        </p>
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos bases de données</h2>
+                <p>Choisissez la base adaptée à votre activité. Livraison immédiate par email.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1: Restaurants Bio -->
+                <div class="product-card">
+                    <div class="product-icon">🍃</div>
+                    <h3>100 Restaurants Bio/Local</h3>
+                    <p>Liste qualifiée de restaurants sensibles bio et circuits courts. Contacts décideurs + scoring IA + scripts.</p>
+                    <ul style="color: var(--gray-600); font-size: 14px; margin: 16px 0; line-height: 1.8;">
+                        <li>✓ 100 restaurants pré-qualifiés France</li>
+                        <li>✓ Contacts email + téléphone</li>
+                        <li>✓ Scoring opportunité 0-10</li>
+                        <li>✓ Templates emails inclus</li>
+                    </ul>
+                    <div class="product-meta">
+                        <div class="product-price">149€</div>
+                        <a href="/restaurants-bio.html" class="product-link">
+                            Voir détails →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Restaurants Végé -->
+                <div class="product-card">
+                    <div class="product-icon">🥗</div>
+                    <h3>50 Restaurants Végétariens/Vegan</h3>
+                    <p>Base exclusive restaurants 100% végé/vegan. Aucune autre base B2B végé n'existe en France.</p>
+                    <ul style="color: var(--gray-600); font-size: 14px; margin: 16px 0; line-height: 1.8;">
+                        <li>✓ 50 restaurants végé/vegan premium</li>
+                        <li>✓ Mix bio, raw food, gastro</li>
+                        <li>✓ Paris dominant (34/50)</li>
+                        <li>✓ Scoring 7-9.5/10</li>
+                    </ul>
+                    <div class="product-meta">
+                        <div class="product-price">99€</div>
+                        <a href="/vege.html" class="product-link">
+                            Voir détails →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Boutiques Bio -->
+                <div class="product-card">
+                    <div class="product-icon">🏪</div>
+                    <h3>30 Boutiques Bio Majeures</h3>
+                    <p>Accès responsables achats enseignes bio majeures. Biocoop, Naturalia, La Vie Claire, etc.</p>
+                    <ul style="color: var(--gray-600); font-size: 14px; margin: 16px 0; line-height: 1.8;">
+                        <li>✓ 30 enseignes bio nationales</li>
+                        <li>✓ Contacts sièges décideurs</li>
+                        <li>✓ Mix chaînes + indépendants</li>
+                        <li>✓ Budget structuré</li>
+                    </ul>
+                    <div class="product-meta">
+                        <div class="product-price">79€</div>
+                        <a href="/boutiques.html" class="product-link">
+                            Voir détails →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Caves à Vin -->
+                <div class="product-card">
+                    <div class="product-icon">🍷</div>
+                    <h3>30 Caves à Vin Premium</h3>
+                    <p>Caves historiques + modernes. 60% focus vins naturels/bio. Cave Augé (1850), Legrand (1880).</p>
+                    <ul style="color: var(--gray-600); font-size: 14px; margin: 16px 0; line-height: 1.8;">
+                        <li>✓ 30 caves premium + bars à vins</li>
+                        <li>✓ Focus vins naturels/bio</li>
+                        <li>✓ Caves historiques + modernes</li>
+                        <li>✓ Paris, Lyon, Bordeaux</li>
+                    </ul>
+                    <div class="product-meta">
+                        <div class="product-price">79€</div>
+                        <a href="/caves.html" class="product-link">
+                            Voir détails →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2>Comment ça marche</h2>
+                <p>Simple, rapide, efficace. Vous êtes opérationnel en 5 minutes.</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choisissez votre base</h3>
+                    <p>Sélectionnez la base de données adaptée à votre activité (restaurants bio, végé, boutiques, caves).</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Paiement sécurisé</h3>
+                    <p>Réglez en ligne via Stripe (CB, Apple Pay, Google Pay). 100% sécurisé. Garantie 30 jours.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Recevez tout par email</h3>
+                    <p>Fichier Excel + templates emails + scripts appels. Livraison instantanée (2-5 min). Commencez à prospecter immédiatement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container-narrow">
+            <h2>Prêt à trouver vos clients restaurants ?</h2>
+            <p>Rejoignez les producteurs qui économisent 20h de prospection par mois.</p>
+            <a href="#products" class="btn">
+                🚀 Voir le catalogue
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Produit</h3>
-                <a href="#pricing">Tarifs</a>
-                <a href="#testimonials">Témoignages</a>
-                <a href="#garantie">Garantie</a>
-                <a href="#free">Essai Gratuit</a>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Ellie VAI</h4>
+                    <p style="font-size: 14px; line-height: 1.6;">
+                        Bases de données restaurants qualifiées pour producteurs bio, grossistes et fournisseurs.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="/restaurants-bio.html">Restaurants Bio/Local (149€)</a></li>
+                        <li><a href="/vege.html">Restaurants Végé/Vegan (99€)</a></li>
+                        <li><a href="/boutiques.html">Boutiques Bio (79€)</a></li>
+                        <li><a href="/caves.html">Caves à Vin Premium (79€)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:contact@ellievai.com">contact@ellievai.com</a></li>
+                        <li><a href="#how-it-works">Comment ça marche</a></li>
+                        <li><a href="#products">FAQ</a></li>
+                        <li><a href="#products">Garantie 30 jours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="/mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="/cgv.html">CGV</a></li>
+                        <li><a href="/politique-confidentialite.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="footer-section">
-                <h3>Catalogue</h3>
-                <a href="#">Restaurants Bio/Local (100)</a>
-                <a href="#">Restaurants Végé/Vegan (50)</a>
-                <a href="#">Boutiques Bio (30)</a>
-                <a href="#">Caves à Vin (30)</a>
+            <div class="footer-bottom">
+                <p>© 2026 Ellie VAI. Tous droits réservés.</p>
             </div>
-            
-            <div class="footer-section">
-                <h3>Légal</h3>
-                <a href="#mentions">Mentions Légales</a>
-                <a href="#cgv">CGV</a>
-                <a href="#rgpd">RGPD</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <a href="mailto:contact@ellievai.com">contact@ellievai.com</a>
-                <p style="font-size: 13px; color: var(--gray-600); margin-top: 16px;">
-                    Ellie VAI<br/>
-                    Intelligence de Marché as a Service
-                </p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>© 2026 Ellie VAI. Tous droits réservés.</p>
         </div>
     </footer>
-
-    <!-- Mentions Légales (hidden section) -->
-    <div id="mentions" style="max-width: 800px; margin: 40px auto; padding: 40px 24px; display: none;">
-        <h2>Mentions Légales</h2>
-        <p><strong>Éditeur</strong> : Ellie VAI (en cours d'immatriculation SIRET)<br/>
-        <strong>Responsable publication</strong> : Jordan Faupro<br/>
-        <strong>Hébergement</strong> : Vercel Inc., 340 S Lemon Ave #4133, Walnut CA 91789, USA<br/>
-        <strong>Contact</strong> : contact@ellievai.com</p>
-        
-        <h3 style="margin-top: 32px;">Conditions Générales de Vente</h3>
-        <p><strong>Produit</strong> : Listes qualifiées restaurants (fichiers Excel + guides PDF)<br/>
-        <strong>Tarifs</strong> : Starter 49€ • Pro 149€ • Enterprise 499€ (TTC, TVA non applicable art. 293 B du CGI)<br/>
-        <strong>Livraison</strong> : Immédiate par email après paiement<br/>
-        <strong>Garantie</strong> : Satisfait ou remboursé 30 jours (voir conditions)<br/>
-        <strong>Données personnelles</strong> : Conformité RGPD. Vos données ne sont ni revendues ni partagées.<br/>
-        <strong>Droit de rétractation</strong> : 14 jours (directive européenne 2011/83/UE).</p>
-    </div>
 </body>
 </html>
