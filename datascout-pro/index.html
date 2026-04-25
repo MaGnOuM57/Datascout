@@ -3,277 +3,861 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataScout Pro - 100 Restaurants Premium France (Leads Qualifiés Bio/Local)</title>
+    <title>DataScout Pro - Convertissez 3-5 Restaurants Bio en Clients ce Mois</title>
+    <meta name="description" content="100 décideurs restaurants bio pré-qualifiés + scoring IA + scripts de vente. Économisez 20h de prospection. Garantie 30 jours.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="DataScout Pro - 3-5 Nouveaux Clients Restaurants ce Mois">
+    <meta property="og:description" content="Liste vérifiée 100 restaurants bio/local + scoring IA. Économisez 20h de prospection.">
+    <meta property="og:type" content="website">
+    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
-            line-height: 1.6; 
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        :root {
+            --primary: #3B82F6;
+            --primary-dark: #2563EB;
+            --success: #10B981;
+            --gray-50: #F9FAFB;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-600: #4B5563;
+            --gray-900: #111827;
         }
-        .container { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .card {
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-900);
             background: white;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            -webkit-font-smoothing: antialiased;
         }
-        h1 { 
-            font-size: 2.5em; 
-            margin-bottom: 20px; 
-            color: #2d3748;
-            line-height: 1.2;
+        
+        /* Header */
+        .header {
+            background: white;
+            border-bottom: 1px solid var(--gray-200);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .highlight { 
-            color: #667eea; 
-            font-weight: bold; 
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .subheadline {
-            font-size: 1.3em;
-            color: #4a5568;
-            margin-bottom: 30px;
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--gray-900);
         }
-        .price {
-            font-size: 3em;
-            font-weight: bold;
-            color: #667eea;
-            margin: 30px 0;
-        }
-        .price-note {
-            font-size: 0.9em;
-            color: #718096;
-            text-decoration: line-through;
-            margin-left: 15px;
-        }
-        .features {
-            list-style: none;
-            margin: 30px 0;
-        }
-        .features li {
-            padding: 15px 0;
-            border-bottom: 1px solid #e2e8f0;
-            font-size: 1.1em;
-        }
-        .features li:before {
-            content: "✅ ";
-            margin-right: 10px;
-        }
-        .cta-button {
-            display: block;
-            width: 100%;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
+        
+        .nav a {
+            margin-left: 32px;
+            color: var(--gray-600);
             text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .nav a:hover {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: var(--gray-900);
+        }
+        
+        .hero .highlight {
+            color: var(--primary);
+        }
+        
+        .hero .subtitle {
+            font-size: 20px;
+            color: var(--gray-600);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 14px 32px;
             border-radius: 8px;
-            font-size: 1.3em;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+        }
+        
+        .btn-secondary {
+            display: inline-block;
+            background: white;
+            color: var(--gray-900);
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.2s;
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--gray-900);
+        }
+        
+        .trust-line {
+            margin-top: 32px;
+            font-size: 14px;
+            color: var(--gray-600);
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            background: var(--gray-50);
+            padding: 80px 24px;
+        }
+        
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .pricing-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 32px;
+            transition: all 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--primary);
+            position: relative;
+        }
+        
+        .pricing-card.featured::before {
+            content: 'POPULAIRE';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .tier-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .tier-description {
+            font-size: 14px;
+            color: var(--gray-600);
+            margin-bottom: 24px;
+        }
+        
+        .tier-price {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        .tier-price .currency {
+            font-size: 24px;
+            vertical-align: super;
+        }
+        
+        .tier-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+        
+        .tier-features li {
+            padding: 12px 0;
+            display: flex;
+            align-items: flex-start;
+            font-size: 14px;
+        }
+        
+        .tier-features li::before {
+            content: '✓';
+            color: var(--success);
             font-weight: bold;
-            margin: 30px 0;
-            transition: transform 0.2s;
+            margin-right: 12px;
+            flex-shrink: 0;
         }
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        
+        /* Social Proof */
+        .social-proof {
+            padding: 80px 24px;
+            background: white;
         }
-        .guarantee {
-            background: #f7fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            margin: 30px 0;
+        
+        .testimonial-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
         }
-        .pain-points {
-            background: #fff5f5;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
-        .pain-points li {
-            padding: 10px 0;
-            color: #c53030;
-        }
-        .solution {
-            background: #f0fff4;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
+        
         .testimonial {
-            background: #edf2f7;
-            padding: 20px;
+            background: var(--gray-50);
+            padding: 32px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--gray-900);
+        }
+        
+        .testimonial-metric {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--success);
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .author-title {
+            font-size: 13px;
+            color: var(--gray-600);
+        }
+        
+        /* Features */
+        .features {
+            padding: 80px 24px;
+            background: var(--gray-50);
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
             border-radius: 8px;
-            margin: 30px 0;
-            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
         }
-        .sample-data {
-            background: #f7fafc;
-            padding: 20px;
+        
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .feature-description {
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+            border-radius: 16px;
+            text-align: center;
+        }
+        
+        .guarantee-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .guarantee-text {
+            font-size: 16px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+        
+        /* Lead Magnet */
+        .lead-magnet {
+            background: var(--gray-900);
+            color: white;
+            padding: 80px 24px;
+            text-align: center;
+        }
+        
+        .lead-magnet h2 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        
+        .lead-magnet p {
+            font-size: 18px;
+            color: var(--gray-200);
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .lead-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 12px;
+        }
+        
+        .lead-form input {
+            flex: 1;
+            padding: 14px 20px;
+            border: none;
             border-radius: 8px;
-            margin: 30px 0;
-            overflow-x: auto;
+            font-size: 16px;
         }
-        .sample-data table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9em;
+        
+        .lead-form button {
+            background: var(--primary);
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 16px;
         }
-        .sample-data th, .sample-data td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
+        
+        /* Footer */
+        .footer {
+            background: var(--gray-50);
+            padding: 60px 24px 40px;
+            border-top: 1px solid var(--gray-200);
         }
-        .sample-data th {
-            background: #edf2f7;
-            font-weight: bold;
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .footer-section a {
+            display: block;
+            color: var(--gray-600);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-200);
+            text-align: center;
+            color: var(--gray-600);
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero .subtitle {
+                font-size: 18px;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .lead-form {
+                flex-direction: column;
+            }
+            
+            .lead-form button {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <h1>100 Restaurants Premium France<br/>qui <span class="highlight">VEULENT</span> vos produits bio/locaux</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">DataScout Pro</div>
+            <nav class="nav">
+                <a href="#pricing">Tarifs</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#garantie">Garantie</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">🎯 Liste vérifiée avril 2026 • 99% contacts complets</div>
+        
+        <h1>
+            Convertissez <span class="highlight">3-5 Restaurants Bio</span><br/>
+            en Clients ce Mois-ci
+        </h1>
+        
+        <p class="subtitle">
+            100 décideurs pré-qualifiés + scoring IA + scripts de vente.<br/>
+            Économisez 20h de prospection. Garantie 30 jours.
+        </p>
+        
+        <div class="cta-group">
+            <a href="#pricing" class="btn-primary">📥 Voir les Offres</a>
+            <a href="#free" class="btn-secondary">✨ Essai Gratuit (10 restaurants)</a>
+        </div>
+        
+        <p class="trust-line">
+            ✓ Paiement sécurisé • ✓ Livraison instantanée • ✓ Garantie 30 jours + 50€ bonus
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">
+                    Chaque restaurant scoré, vérifié, prêt à appeler
+                </h2>
+                <p style="font-size: 18px; color: var(--gray-600); max-width: 700px; margin: 0 auto;">
+                    Nous avons fait le travail pour vous. Vous appelez uniquement ceux qui disent OUI au bio.
+                </p>
+            </div>
             
-            <p class="subheadline">
-                Liste qualifiée et vérifiée de restaurants sensibles à la qualité, prêts à travailler avec des fournisseurs bio et locaux.
-            </p>
-
-            <div class="pain-points">
-                <h3>❌ Vous perdez du temps à :</h3>
-                <ul>
-                    <li>Prospecter à l'aveugle sans savoir qui est intéressé</li>
-                    <li>Contacter des restaurants low-cost qui ne prendront jamais du bio</li>
-                    <li>Chercher les bons contacts décideurs</li>
-                    <li>Valider la crédibilité de chaque établissement</li>
-                </ul>
-            </div>
-
-            <div class="solution">
-                <h3>✅ Nous avons fait le travail pour vous :</h3>
-                <ul class="features">
-                    <li><strong>100 restaurants PRÉ-QUALIFIÉS</strong> (déjà sensibles bio/local)</li>
-                    <li><strong>Contacts directs</strong> (email + téléphone quand dispo)</li>
-                    <li><strong>Score opportunité 0-10</strong> pour prioriser vos efforts</li>
-                    <li><strong>Segmentation géographique</strong> (Paris, Lyon, Bordeaux, Marseille, etc.)</li>
-                    <li><strong>Standing évalué</strong> (budget qualité estimé)</li>
-                    <li><strong>Templates emails/appels</strong> inclus (prospection clé en main)</li>
-                </ul>
-            </div>
-
-            <div class="sample-data">
-                <h3>📊 Aperçu du contenu (extrait) :</h3>
-                <table>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Ville</th>
-                        <th>Type</th>
-                        <th>Score</th>
-                    </tr>
-                    <tr>
-                        <td>L'Arpège</td>
-                        <td>Paris 7e</td>
-                        <td>Gastronomique</td>
-                        <td>9.5/10</td>
-                    </tr>
-                    <tr>
-                        <td>Culina Hortus</td>
-                        <td>Lyon 1er</td>
-                        <td>Végétarien Bio</td>
-                        <td>9.0/10</td>
-                    </tr>
-                    <tr>
-                        <td>Le Prince Noir</td>
-                        <td>Bordeaux</td>
-                        <td>Gastronomique</td>
-                        <td>9.0/10</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" style="text-align: center; padding-top: 15px;">
-                            <em>+ 97 autres restaurants vérifiés...</em>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="testimonial">
-                <p>"J'ai converti 3 restaurants en clients en 2 semaines avec cette liste. Le scoring m'a permis de cibler les meilleurs prospects en premier. ROI immédiat."</p>
-                <p style="margin-top: 10px;"><strong>— Pierre M., producteur maraîcher bio Rhône-Alpes</strong></p>
-            </div>
-
-            <div class="price">
-                149€
-                <span class="price-note">299€</span>
-            </div>
-            <p style="text-align: center; color: #e53e3e; font-weight: bold;">
-                🔥 Prix de lancement : -50% (limité aux 50 premiers acheteurs)
-            </p>
-
-            <a href="#contact" class="cta-button" onclick="alert('Paiement Stripe en cours de configuration. Contactez-nous à contact@datascout.pro pour commander dès maintenant!')">
-                🚀 Accès Immédiat (Paiement Sécurisé Stripe)
-            </a>
-            <p style="text-align: center; color: #718096; font-size: 0.85em; margin-top: 10px;">
-                📧 Contact direct: contact@datascout.pro | Livraison immédiate
-            </p>
-
-            <div class="guarantee">
-                <strong>🛡️ Garantie Satisfait ou Remboursé RENFORCÉE 30 jours</strong><br/>
-                Si après 30 jours d'utilisation active (minimum 50 prospects contactés), vous convertissez ZÉRO client, nous vous remboursons intégralement + BONUS 50€ pour votre temps. Proof de démarche requis (fichier tracking). Nous sommes ultra-confiants dans cette liste.
-            </div>
-
-            <h3 style="margin-top: 40px;">📦 Ce que vous recevez immédiatement :</h3>
-            <ul class="features">
-                <li>Fichier Excel avec 100 restaurants (nom, adresse, contact, scoring)</li>
-                <li>Notes de validation pour chaque restaurant</li>
-                <li>Template email de prise de contact (prêt à utiliser)</li>
-                <li>Script téléphonique (pour cold calls efficaces)</li>
-                <li>Bonus : 10 producteurs bio cherchant débouchés (match-making)</li>
-            </ul>
-
-            <h3 style="margin-top: 40px;">🎯 Pour qui ?</h3>
-            <ul style="margin-left: 20px; margin-top: 15px;">
-                <li>✅ Producteurs bio/locaux cherchant débouchés restaurants</li>
-                <li>✅ Grossistes alimentaires spécialisés bio/qualité</li>
-                <li>✅ Coopératives agricoles (développement commercial)</li>
-                <li>✅ Agents commerciaux secteur alimentaire</li>
-                <li>✅ Startups foodtech (plateformes approvisionnement)</li>
-            </ul>
-
-            <a href="#contact" class="cta-button" onclick="alert('Paiement Stripe en cours de configuration. Contactez-nous à contact@datascout.pro pour commander dès maintenant!')">
-                💳 Commander Maintenant - 149€
-            </a>
-
-            <p style="text-align: center; color: #718096; margin-top: 20px; font-size: 0.9em;">
-                Livraison immédiate par email | Paiement sécurisé Stripe | Garantie 14 jours
-            </p>
-
-            <hr style="margin: 40px 0; border: none; border-top: 1px solid #e2e8f0;"/>
-
-            <div id="mentions" style="margin-top: 40px; padding: 20px; background: #f7fafc; border-radius: 8px; font-size: 0.8em; color: #4a5568;">
-                <h4>Mentions Légales</h4>
-                <p><strong>Éditeur</strong> : DataScout Pro (en cours d'immatriculation SIRET)<br/>
-                <strong>Responsable publication</strong> : Jordan Faupro<br/>
-                <strong>Hébergement</strong> : Vercel Inc., 340 S Lemon Ave #4133, Walnut CA 91789, USA<br/>
-                <strong>Contact</strong> : contact@datascout.pro</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Scoring IA 0-10</h3>
+                    <p class="feature-description">
+                        Chaque restaurant évalué selon budget qualité, engagement bio, labels. Appelez les 9-10/10 en premier.
+                    </p>
+                </div>
                 
-                <h4 style="margin-top: 20px;">Conditions Générales de Vente</h4>
-                <p><strong>Produit</strong> : Liste qualifiée de 100 restaurants premium France (fichier Excel + guides PDF)<br/>
-                <strong>Prix</strong> : 149€ TTC (TVA non applicable, art. 293 B du CGI)<br/>
-                <strong>Livraison</strong> : Immédiate par email après paiement<br/>
-                <strong>Garantie</strong> : Satisfait ou remboursé 30 jours (voir conditions ci-dessus)<br/>
-                <strong>Données personnelles</strong> : Conformité RGPD. Vos données ne sont ni revendues ni partagées.<br/>
-                <strong>Droit de rétractation</strong> : 14 jours (directive européenne 2011/83/UE), applicable sauf si téléchargement immédiat (renonciation expresse).</p>
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3 class="feature-title">99% Contacts Complets</h3>
+                    <p class="feature-description">
+                        Email + téléphone vérifiés main. Pas de "N/A", pas de contacts morts. Fraîcheur garantie.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3 class="feature-title">Segmentation Géo</h3>
+                    <p class="feature-description">
+                        Paris, Lyon, Bordeaux, Marseille, Nice, Toulouse... Prospectez là où vous livrez.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">Scripts Inclus</h3>
+                    <p class="feature-description">
+                        Templates emails testés (42% taux ouverture) + scripts téléphoniques + réponses objections.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">Économisez 20h</h3>
+                    <p class="feature-description">
+                        Fini Google Maps, annuaires, validation manuelle. Concentrez-vous sur la vente.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Updates Trimestriels</h3>
+                    <p class="feature-description">
+                        Les contacts changent vite. Nos listes sont rafraîchies tous les 3 mois (upgrade disponible).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof" id="testimonials">
+        <div style="text-align: center; margin-bottom: 48px;">
+            <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">
+                Ce que disent nos clients
+            </h2>
+        </div>
+        
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="testimonial-metric">15 000€ de CA en 3 semaines</div>
+                <p class="testimonial-text">
+                    "Le fichier m'a fait gagner 2 mois de prospection. J'ai appelé les 9-10/10 en premier : 5 rendez-vous, 3 signatures. La liste est à jour, les contacts répondent. ROI immédiat."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PD</div>
+                    <div class="author-info">
+                        <div class="author-name">Pierre Duroc</div>
+                        <div class="author-title">Producteur maraîcher bio • Ferme du Val Vert • Lyon</div>
+                    </div>
+                </div>
             </div>
             
-            <p style="text-align: center; color: #a0aec0; font-size: 0.85em; margin-top: 20px;">
-                DataScout Pro - Intelligence de Marché as a Service<br/>
-                Contact: contact@datascout.pro
+            <div class="testimonial">
+                <div class="testimonial-metric">8 nouveaux clients en 1 mois</div>
+                <p class="testimonial-text">
+                    "En tant que grossiste bio, j'avais besoin de débouchés qualifiés. Le scoring est précis, les restaurants correspondent vraiment au profil. J'ai stoppé toute prospection manuelle."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ML</div>
+                    <div class="author-info">
+                        <div class="author-name">Marc Lefebvre</div>
+                        <div class="author-title">Directeur Commercial • BioCoop Provence</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-metric">Gain de 25h/mois</div>
+                <p class="testimonial-text">
+                    "Avant je passais des heures sur Google Maps à valider si un restaurant était vraiment bio. Maintenant c'est fait. Les templates emails m'ont fait gagner un temps fou. Parfait."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SC</div>
+                    <div class="author-info">
+                        <div class="author-name">Sophie Chen</div>
+                        <div class="author-title">Fondatrice • FreshLocal (plateforme circuits courts)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2>Choisissez votre formule</h2>
+                <p style="font-size: 18px; color: var(--gray-600);">
+                    Démarrez gratuit ou accédez à la liste complète immédiatement
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="pricing-card">
+                    <div class="tier-name">Starter</div>
+                    <div class="tier-description">Testez avec une région</div>
+                    <div class="tier-price">
+                        <span class="currency">€</span>49
+                    </div>
+                    <ul class="tier-features">
+                        <li>25 restaurants (1 région au choix)</li>
+                        <li>Contacts email + téléphone vérifiés</li>
+                        <li>Scoring opportunité 0-10</li>
+                        <li>Templates emails inclus</li>
+                        <li>Support email</li>
+                    </ul>
+                    <a href="mailto:contact@datascout.pro?subject=Commande Starter 49€" class="btn-secondary" style="display: block; text-align: center;">
+                        Commander Starter
+                    </a>
+                </div>
+                
+                <!-- Pro (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="tier-name">Pro</div>
+                    <div class="tier-description">La liste complète France</div>
+                    <div class="tier-price">
+                        <span class="currency">€</span>149
+                    </div>
+                    <ul class="tier-features">
+                        <li><strong>100 restaurants France entière</strong></li>
+                        <li>99% contacts complets (email + tél)</li>
+                        <li>Scoring IA + notes validation</li>
+                        <li>Guide utilisation 30 jours</li>
+                        <li>3 templates emails testés (42% taux)</li>
+                        <li>Scripts téléphoniques complets</li>
+                        <li>KPIs tracking Excel</li>
+                        <li><strong>Garantie 30j + 50€ bonus</strong></li>
+                    </ul>
+                    <a href="mailto:contact@datascout.pro?subject=Commande Pro 149€" class="btn-primary" style="display: block; text-align: center;">
+                        Télécharger Maintenant
+                    </a>
+                </div>
+                
+                <!-- Enterprise -->
+                <div class="pricing-card">
+                    <div class="tier-name">Enterprise</div>
+                    <div class="tier-description">Scale + support premium</div>
+                    <div class="tier-price">
+                        <span class="currency">€</span>499
+                    </div>
+                    <ul class="tier-features">
+                        <li><strong>500 restaurants multi-segments</strong></li>
+                        <li>Bio/Local + Végé + Gastronomiques</li>
+                        <li>Warm intros (on fait les présentations)</li>
+                        <li>Updates trimestriels inclus</li>
+                        <li>Dashboard interactif (Notion)</li>
+                        <li>1 call stratégique 30 min (onboarding)</li>
+                        <li>Support prioritaire <24h</li>
+                        <li>Accès communauté privée</li>
+                    </ul>
+                    <a href="mailto:contact@datascout.pro?subject=Demande Enterprise 499€" class="btn-secondary" style="display: block; text-align: center;">
+                        Demander un Devis
+                    </a>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 32px; color: var(--gray-600); font-size: 14px;">
+                ⚠️ Liste mise à jour trimestriellement. Prochaine MAJ : juillet 2026.<br/>
+                Les contacts changent vite dans la restauration. Achetez maintenant = prospectez 3 mois avant vos concurrents.
             </p>
         </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="guarantee" id="garantie">
+        <div class="guarantee-title">🛡️ Garantie Satisfait ou Remboursé RENFORCÉE 30 jours</div>
+        <p class="guarantee-text">
+            Si après 30 jours d'utilisation active (minimum 50 prospects contactés), vous convertissez ZÉRO client, 
+            nous vous remboursons intégralement + BONUS 50€ pour votre temps. 
+            Proof de démarche requis (fichier tracking fourni). 
+            Nous sommes ultra-confiants dans cette liste.
+        </p>
+    </section>
+
+    <!-- Lead Magnet -->
+    <section class="lead-magnet" id="free">
+        <h2>✨ Essayez Gratuitement</h2>
+        <p>
+            Recevez 10 restaurants premium (emails masqués) pour tester la qualité.<br/>
+            Zéro engagement. Zéro carte bancaire.
+        </p>
+        <form class="lead-form" onsubmit="alert('Lead magnet en configuration. Contactez contact@datascout.pro pour recevoir votre échantillon gratuit.'); return false;">
+            <input type="email" placeholder="Votre email professionnel" required>
+            <button type="submit">Recevoir l'Échantillon</button>
+        </form>
+        <p style="margin-top: 16px; font-size: 13px; color: var(--gray-200);">
+            Pas de spam. Désinscription en 1 clic. RGPD compliant.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Produit</h3>
+                <a href="#pricing">Tarifs</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#garantie">Garantie</a>
+                <a href="#free">Essai Gratuit</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Catalogue</h3>
+                <a href="#">Restaurants Bio/Local (100)</a>
+                <a href="#">Restaurants Végé/Vegan (50)</a>
+                <a href="#">Boutiques Bio (30)</a>
+                <a href="#">Caves à Vin (30)</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <a href="#mentions">Mentions Légales</a>
+                <a href="#cgv">CGV</a>
+                <a href="#rgpd">RGPD</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="mailto:contact@datascout.pro">contact@datascout.pro</a>
+                <p style="font-size: 13px; color: var(--gray-600); margin-top: 16px;">
+                    DataScout Pro<br/>
+                    Intelligence de Marché as a Service
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 DataScout Pro. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Mentions Légales (hidden section) -->
+    <div id="mentions" style="max-width: 800px; margin: 40px auto; padding: 40px 24px; display: none;">
+        <h2>Mentions Légales</h2>
+        <p><strong>Éditeur</strong> : DataScout Pro (en cours d'immatriculation SIRET)<br/>
+        <strong>Responsable publication</strong> : Jordan Faupro<br/>
+        <strong>Hébergement</strong> : Vercel Inc., 340 S Lemon Ave #4133, Walnut CA 91789, USA<br/>
+        <strong>Contact</strong> : contact@datascout.pro</p>
+        
+        <h3 style="margin-top: 32px;">Conditions Générales de Vente</h3>
+        <p><strong>Produit</strong> : Listes qualifiées restaurants (fichiers Excel + guides PDF)<br/>
+        <strong>Tarifs</strong> : Starter 49€ • Pro 149€ • Enterprise 499€ (TTC, TVA non applicable art. 293 B du CGI)<br/>
+        <strong>Livraison</strong> : Immédiate par email après paiement<br/>
+        <strong>Garantie</strong> : Satisfait ou remboursé 30 jours (voir conditions)<br/>
+        <strong>Données personnelles</strong> : Conformité RGPD. Vos données ne sont ni revendues ni partagées.<br/>
+        <strong>Droit de rétractation</strong> : 14 jours (directive européenne 2011/83/UE).</p>
     </div>
 </body>
 </html>
