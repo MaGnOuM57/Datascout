@@ -4,24 +4,53 @@
   "current_revenue": 0,
   "sales": [],
   "prospection": {
-    "emails_sent_today": 0,
-    "total_sent": 0,
+    "emails_sent_today": 1,
+    "total_sent": 1,
     "open_rate": 0,
     "response_rate": 0,
-    "last_batch": null,
-    "prospects_scraped": 5,
+    "last_batch": "batch-1-ultra-qualified",
+    "last_email_sent_at": "2026-04-25T20:14:00Z",
+    "prospects_scraped": 20,
     "next_batch_ready": true
   },
-  "blockers": [
-    {
-      "type": "resend_dns_propagation",
-      "description": "Resend domain ellievai.com ajouté, DNS propagation en cours depuis 1h. Status: 'Looking for DNS records'. ETA: 1-3h selon OVH.",
-      "severity": "critical",
-      "created_at": "2026-04-25T19:00:00Z",
-      "status_update": "2026-04-25T20:02:00Z",
-      "eta_resolution": "1-3h (propagation DNS OVH)"
-    }
-  ],
+  "batch_1_status": {
+    "started_at": "2026-04-25T20:14:00Z",
+    "status": "in_progress",
+    "sent": 1,
+    "total": 5,
+    "emails": [
+      {
+        "to": "commercial@fermeduvalvert.fr",
+        "company": "Ferme du Val Vert",
+        "status": "sent",
+        "email_id": "0c3cfb4b-eb80-4aee-ab08-08eb70cd202b",
+        "sent_at": "2026-04-25T20:14:00Z"
+      },
+      {
+        "to": "contact@biocoopprovence.fr",
+        "company": "BioCoop Provence",
+        "status": "queued",
+        "eta": "2026-04-25T20:17:21Z"
+      },
+      {
+        "to": "hello@lafourche.fr",
+        "company": "La Fourche",
+        "status": "queued"
+      },
+      {
+        "to": "hello@laruchequiditoui.fr",
+        "company": "La Ruche qui dit Oui",
+        "status": "queued"
+      },
+      {
+        "to": "contact@biopartenaire.com",
+        "company": "Bio Partenaire",
+        "status": "queued"
+      }
+    ],
+    "eta_completion": "2026-04-25T20:30:00Z"
+  },
+  "blockers": [],
   "stripe_status": {
     "mode": "PRODUCTION",
     "updated_at": "2026-04-25T20:02:00Z",
@@ -29,20 +58,20 @@
     "products": ["Pro 149€", "Végé 99€", "Boutiques 79€", "Caves 79€"]
   },
   "next_actions": [
-    "PARALLEL: Scraper batch 2 (35 prospects additionnels)",
-    "PARALLEL: Vérifier Stripe prod payment links",
-    "PARALLEL: Préparer emails batch 2-3 (personnalisés)",
-    "PARALLEL: Optimiser site (CTA, urgency, social proof)",
-    "WAITING: Resend DNS verification (auto, 1-3h)",
-    "AUTO: Envoyer batch 1 dès Resend verified"
+    "WAIT: Batch 1 completion (~20:30)",
+    "PARALLEL: Setup Stripe payment links (4 produits)",
+    "PARALLEL: Scraping batch 3 (20 prospects restants)",
+    "PARALLEL: Monitoring ouvertures batch 1 (24-48h)",
+    "SUNDAY: Batch 2 send (15 emails)",
+    "SUNDAY: Relances intelligentes J+1, J+2"
   ],
   "migration_status": {
     "rebranding_completed": true,
     "dns_ovh_configured": true,
     "vercel_configured": true,
-    "resend_domain_added": true,
-    "resend_verified": false,
-    "stripe_production": true
+    "resend_verified": true,
+    "stripe_production": true,
+    "prospection_active": true
   },
-  "last_update": "2026-04-25T20:05:00Z"
+  "last_update": "2026-04-25T20:17:00Z"
 }

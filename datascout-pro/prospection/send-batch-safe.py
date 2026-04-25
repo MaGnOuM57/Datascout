@@ -73,13 +73,13 @@ def check_domain_health():
         if response.status_code == 200:
             domains = response.json().get("data", [])
             for domain in domains:
-                if domain.get("name") == "datascout.pro":
+                if domain.get("name") == "ellievai.com":
                     status = domain.get("status")
                     if status != "verified":
                         print(f"❌ Domain not verified (status: {status})")
                         return False
                     return True
-            print("❌ Domain 'datascout.pro' not found in Resend")
+            print("❌ Domain 'ellievai.com' not found in Resend")
             return False
         else:
             print(f"⚠️ Could not check domain status (API error)")
