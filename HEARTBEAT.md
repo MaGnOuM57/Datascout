@@ -1,38 +1,19 @@
-# HEARTBEAT.md - Proactive Agent Checks
+# HEARTBEAT.md
 
-## 🔄 Regular Checks (rotate 2-4x daily)
+## Checks (2-4x daily, 08:00-23:00)
+- Email (urgent only)
+- Calendar (next 24-48h)
+- Project status (git changes)
+- Weather (Luxembourg, if relevant)
 
-### Communication & Schedule
-- [ ] **Email**: Any urgent unread messages? (check every ~4-6h during daytime)
-- [ ] **Calendar**: Upcoming events in next 24-48h?
-- [ ] **Mentions**: Social notifications? (if configured)
-
-### Project & Environment
-- [ ] **Project Status**: Any git changes, pending work, builds to check?
-- [ ] **Weather**: Relevant if le J might go out (Luxembourg weather)
-
-### Memory Maintenance (every few days)
-- [ ] **Memory Review**: Read recent daily notes, update MEMORY.md with insights
-- [ ] **File Organization**: Clean up workspace, organize notes
-
-## 🕒 Timing Rules
-
-**Reach out when:**
-- Important email or event
-- Something interesting discovered
+## When to reach out
+- Important email/event
 - >8h since last interaction
 - Critical project update
 
-**Stay quiet (HEARTBEAT_OK) when:**
-- Late night (23:00-08:00) unless urgent
+## When HEARTBEAT_OK
+- Late night (23:00-08:00)
+- Nothing new (<30min)
 - Human clearly busy
-- Nothing new since last check (<30min ago)
-- Just checked same thing recently
 
-## 📊 Tracking
-
-State tracked in: `memory/heartbeat-state.json`
-
----
-
-*Keep checks lightweight. Be helpful, not annoying. Quality over frequency.*
+Track in: `memory/heartbeat-state.json`
