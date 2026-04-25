@@ -1,0 +1,85 @@
+{
+  "source": "immotop.lu",
+  "date_scrape": "2026-04-25",
+  "proprietes": [
+    {
+      "type": "Multi-family detached house",
+      "prix": 810000,
+      "surface_m2": 219,
+      "chambres": null,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["toiture", "facade", "isolation"],
+      "score_interet": 7
+    },
+    {
+      "type": "Multi-family detached house",
+      "prix": 990000,
+      "surface_m2": 263,
+      "chambres": 3,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["toiture", "electricite", "plomberie"],
+      "score_interet": 8
+    },
+    {
+      "type": "Multi-family detached house",
+      "prix": 1150000,
+      "surface_m2": 219,
+      "chambres": 3,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["renovation_complete", "toiture"],
+      "score_interet": 9
+    },
+    {
+      "type": "Multi-family detached house",
+      "prix": 1280000,
+      "surface_m2": 263,
+      "chambres": null,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["facade", "menuiserie", "toiture"],
+      "score_interet": 8
+    },
+    {
+      "type": "Multi-family detached house",
+      "prix": 1505078,
+      "surface_m2": 283,
+      "chambres": 3,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["peinture", "electricite"],
+      "score_interet": 7
+    },
+    {
+      "type": "Single-family detached house",
+      "prix": 1690000,
+      "surface_m2": 242,
+      "chambres": 4,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["renovation_luxe", "piscine", "jardin"],
+      "score_interet": 9
+    },
+    {
+      "type": "Duplex",
+      "prix": 1499000,
+      "surface_m2": 155,
+      "chambres": 3,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["cuisine", "salle_bain"],
+      "score_interet": 6
+    },
+    {
+      "type": "Duplex",
+      "prix": 1649000,
+      "surface_m2": 163,
+      "chambres": 4,
+      "region": "Luxembourg",
+      "potentiel_travaux": ["renovation_complete"],
+      "score_interet": 8
+    }
+  ],
+  "stats": {
+    "total_proprietes": 8,
+    "prix_moyen": 1196885,
+    "prix_min": 810000,
+    "prix_max": 1690000,
+    "surface_moyenne_m2": 226
+  }
+}

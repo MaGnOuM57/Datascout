@@ -1,0 +1,427 @@
+{
+  "batch_id": "BATCH-001",
+  "date_creation": "2026-04-25",
+  "statut": "en_cours_qualification",
+  "objectif": "10 leads score >8/10",
+  "leads": [
+    {
+      "id": "LUX-2026-001",
+      "score": 9.2,
+      "propriete": {
+        "type": "Single-family detached house",
+        "prix": 1690000,
+        "surface_m2": 242,
+        "chambres": 4,
+        "localisation": "Luxembourg-Ville, Belair",
+        "annee_estimee": 1985
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Toiture",
+          "urgence": "haute",
+          "budget_estime_min": 25000,
+          "budget_estime_max": 35000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Facade",
+          "urgence": "moyenne",
+          "budget_estime_min": 15000,
+          "budget_estime_max": 20000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Menuiserie",
+          "urgence": "moyenne",
+          "budget_estime_min": 30000,
+          "budget_estime_max": 40000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 80,
+      "probabilite_conversion": 85,
+      "statut": "qualifie",
+      "corps_metier_principal": "Toiture"
+    },
+    {
+      "id": "LUX-2026-002",
+      "score": 8.7,
+      "propriete": {
+        "type": "Multi-family detached house",
+        "prix": 1280000,
+        "surface_m2": 263,
+        "chambres": 3,
+        "localisation": "Luxembourg-Ville",
+        "annee_estimee": 1990
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Facade",
+          "urgence": "haute",
+          "budget_estime_min": 18000,
+          "budget_estime_max": 25000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Menuiserie",
+          "urgence": "moyenne",
+          "budget_estime_min": 25000,
+          "budget_estime_max": 35000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Toiture",
+          "urgence": "moyenne",
+          "budget_estime_min": 20000,
+          "budget_estime_max": 28000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 75,
+      "probabilite_conversion": 80,
+      "statut": "qualifie",
+      "corps_metier_principal": "Facade"
+    },
+    {
+      "id": "LUX-2026-003",
+      "score": 8.9,
+      "propriete": {
+        "type": "Multi-family detached house",
+        "prix": 1150000,
+        "surface_m2": 219,
+        "chambres": 3,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1982
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Renovation complete",
+          "urgence": "haute",
+          "budget_estime_min": 80000,
+          "budget_estime_max": 120000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Toiture",
+          "urgence": "haute",
+          "budget_estime_min": 22000,
+          "budget_estime_max": 30000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Electricite",
+          "urgence": "haute",
+          "budget_estime_min": 15000,
+          "budget_estime_max": 20000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 90,
+      "probabilite_conversion": 90,
+      "statut": "qualifie",
+      "corps_metier_principal": "Toiture"
+    },
+    {
+      "id": "LUX-2026-004",
+      "score": 8.1,
+      "propriete": {
+        "type": "Multi-family detached house",
+        "prix": 990000,
+        "surface_m2": 263,
+        "chambres": 3,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1988
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Toiture",
+          "urgence": "moyenne",
+          "budget_estime_min": 20000,
+          "budget_estime_max": 28000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Electricite",
+          "urgence": "moyenne",
+          "budget_estime_min": 12000,
+          "budget_estime_max": 18000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Plomberie",
+          "urgence": "basse",
+          "budget_estime_min": 10000,
+          "budget_estime_max": 15000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 70,
+      "probabilite_conversion": 75,
+      "statut": "qualifie",
+      "corps_metier_principal": "Toiture"
+    },
+    {
+      "id": "LUX-2026-005",
+      "score": 8.5,
+      "propriete": {
+        "type": "Multi-family detached house",
+        "prix": 1505078,
+        "surface_m2": 283,
+        "chambres": 3,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1995
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Peinture",
+          "urgence": "moyenne",
+          "budget_estime_min": 12000,
+          "budget_estime_max": 18000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Electricite",
+          "urgence": "moyenne",
+          "budget_estime_min": 10000,
+          "budget_estime_max": 15000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Facade",
+          "urgence": "basse",
+          "budget_estime_min": 15000,
+          "budget_estime_max": 20000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 65,
+      "probabilite_conversion": 70,
+      "statut": "qualifie",
+      "corps_metier_principal": "Peinture"
+    },
+    {
+      "id": "LUX-2026-006",
+      "score": 8.3,
+      "propriete": {
+        "type": "Duplex",
+        "prix": 1649000,
+        "surface_m2": 163,
+        "chambres": 4,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1987
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Renovation complete",
+          "urgence": "haute",
+          "budget_estime_min": 50000,
+          "budget_estime_max": 80000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Cuisine",
+          "urgence": "haute",
+          "budget_estime_min": 20000,
+          "budget_estime_max": 30000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Salle de bain",
+          "urgence": "moyenne",
+          "budget_estime_min": 15000,
+          "budget_estime_max": 25000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 75,
+      "probabilite_conversion": 80,
+      "statut": "qualifie",
+      "corps_metier_principal": "Renovation"
+    }
+  ],
+    {
+      "id": "LUX-2026-007",
+      "score": 8.4,
+      "propriete": {
+        "type": "Single-family detached house",
+        "prix": 1240000,
+        "surface_m2": 222,
+        "chambres": 5,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1983
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Toiture",
+          "urgence": "haute",
+          "budget_estime_min": 22000,
+          "budget_estime_max": 30000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Isolation",
+          "urgence": "moyenne",
+          "budget_estime_min": 18000,
+          "budget_estime_max": 25000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Menuiserie",
+          "urgence": "moyenne",
+          "budget_estime_min": 25000,
+          "budget_estime_max": 35000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 75,
+      "probabilite_conversion": 80,
+      "statut": "qualifie",
+      "corps_metier_principal": "Toiture"
+    },
+    {
+      "id": "LUX-2026-008",
+      "score": 8.0,
+      "propriete": {
+        "type": "Single-family detached house",
+        "prix": 1299000,
+        "surface_m2": 166,
+        "chambres": 3,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1992
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Facade",
+          "urgence": "moyenne",
+          "budget_estime_min": 14000,
+          "budget_estime_max": 20000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Electricite",
+          "urgence": "moyenne",
+          "budget_estime_min": 10000,
+          "budget_estime_max": 15000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Salle de bain",
+          "urgence": "basse",
+          "budget_estime_min": 12000,
+          "budget_estime_max": 18000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 65,
+      "probabilite_conversion": 75,
+      "statut": "qualifie",
+      "corps_metier_principal": "Facade"
+    },
+    {
+      "id": "LUX-2026-009",
+      "score": 9.0,
+      "propriete": {
+        "type": "Single-family detached house",
+        "prix": 1864000,
+        "surface_m2": 194,
+        "chambres": 4,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1980
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Toiture",
+          "urgence": "haute",
+          "budget_estime_min": 28000,
+          "budget_estime_max": 40000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Facade",
+          "urgence": "haute",
+          "budget_estime_min": 20000,
+          "budget_estime_max": 28000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Renovation complete",
+          "urgence": "moyenne",
+          "budget_estime_min": 60000,
+          "budget_estime_max": 90000,
+          "priorite": 3
+        }
+      ],
+      "valeur_lead": 85,
+      "probabilite_conversion": 85,
+      "statut": "qualifie",
+      "corps_metier_principal": "Toiture"
+    },
+    {
+      "id": "LUX-2026-010",
+      "score": 9.3,
+      "propriete": {
+        "type": "Multi-family detached house",
+        "prix": 1993712,
+        "surface_m2": 307,
+        "chambres": 5,
+        "localisation": "Luxembourg",
+        "annee_estimee": 1978
+      },
+      "besoins_detectes": [
+        {
+          "corps_metier": "Toiture",
+          "urgence": "haute",
+          "budget_estime_min": 35000,
+          "budget_estime_max": 50000,
+          "priorite": 1
+        },
+        {
+          "corps_metier": "Facade",
+          "urgence": "haute",
+          "budget_estime_min": 25000,
+          "budget_estime_max": 35000,
+          "priorite": 2
+        },
+        {
+          "corps_metier": "Electricite",
+          "urgence": "haute",
+          "budget_estime_min": 18000,
+          "budget_estime_max": 25000,
+          "priorite": 3
+        },
+        {
+          "corps_metier": "Plomberie",
+          "urgence": "moyenne",
+          "budget_estime_min": 15000,
+          "budget_estime_max": 22000,
+          "priorite": 4
+        }
+      ],
+      "valeur_lead": 90,
+      "probabilite_conversion": 90,
+      "statut": "qualifie",
+      "corps_metier_principal": "Toiture"
+    }
+  ],
+  "statistiques": {
+    "total_leads_qualifies": 10,
+    "score_moyen": 8.64,
+    "valeur_totale_leads": 770,
+    "budget_travaux_total_min": 612000,
+    "budget_travaux_total_max": 900000,
+    "probabilite_conversion_moyenne": 81,
+    "repartition_corps_metier": {
+      "Toiture": 6,
+      "Facade": 2,
+      "Renovation": 1,
+      "Peinture": 1
+    }
+  },
+  "next_steps": [
+    "Identifier artisans toiture Luxembourg (priorité haute)",
+    "Identifier artisans façade Luxembourg",
+    "Préparer pitch de vente leads",
+    "Créer fiches détaillées pour chaque lead",
+    "Setup tracking conversions"
+  ]
+}
