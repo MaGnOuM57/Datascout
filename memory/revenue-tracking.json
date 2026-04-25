@@ -4,99 +4,62 @@
   "current_revenue": 0,
   "sales": [],
   "prospection": {
-    "emails_sent_today": 5,
-    "total_sent": 5,
+    "status": "STOPPED",
+    "reason": "66.7% bounce rate (4/6 emails)",
+    "emails_sent_today": 6,
+    "total_sent": 6,
+    "bounced": 4,
+    "delivered": 2,
+    "bounce_rate": "66.7%",
     "open_rate": 0,
     "response_rate": 0,
-    "last_batch": "batch-1-ultra-qualified",
-    "last_email_sent_at": "2026-04-25T20:31:00Z",
-    "prospects_scraped": 35,
-    "next_batch_ready": true
+    "last_batch": "test-producteur",
+    "last_email_sent_at": "2026-04-25T21:33:00Z",
+    "campaign_stopped_at": "2026-04-25T21:36:00Z"
   },
-  "batch_1_results": {
-    "started_at": "2026-04-25T20:14:00Z",
-    "completed_at": "2026-04-25T20:31:17Z",
-    "status": "completed",
-    "sent": 5,
-    "failed": 0,
-    "bounced": 0,
-    "spam_complaints": 0,
-    "success_rate": "100%",
-    "emails": [
-      {
-        "to": "commercial@fermeduvalvert.fr",
-        "company": "Ferme du Val Vert",
-        "status": "sent",
-        "email_id": "2222eb9b-c98e-45f1-b4fb-1de4cce39de0"
-      },
-      {
-        "to": "contact@biocoopprovence.fr",
-        "company": "BioCoop Provence",
-        "status": "sent",
-        "email_id": "1028b011-25e6-42b6-aeb8-29d022f20977"
-      },
-      {
-        "to": "hello@lafourche.fr",
-        "company": "La Fourche",
-        "status": "sent",
-        "email_id": "d40e4f03-16e8-47d6-8d78-c77d1f122f08"
-      },
-      {
-        "to": "hello@laruchequiditoui.fr",
-        "company": "La Ruche qui dit Oui",
-        "status": "sent",
-        "email_id": "b126a095-46c9-4373-80a2-01ed2a250fe9"
-      },
-      {
-        "to": "contact@biopartenaire.com",
-        "company": "Bio Partenaire",
-        "status": "sent",
-        "email_id": "0df10160-7720-4992-9cb2-f9d30c3d5a36"
-      }
-    ]
+  "email_campaigns": {
+    "batch_1_gros_groupes": {
+      "sent": 5,
+      "bounced": 3,
+      "delivered": 2,
+      "bounce_rate": "60%",
+      "timestamp": "2026-04-25T20:31:00Z"
+    },
+    "test_producteur": {
+      "sent": 1,
+      "bounced": 1,
+      "delivered": 0,
+      "bounce_rate": "100%",
+      "email": "ferme@fermedubec.com",
+      "timestamp": "2026-04-25T21:33:00Z"
+    }
   },
-  "batch_2_ready": {
-    "prospects": 35,
-    "scoring_avg": 8.7,
-    "status": "ready_to_send",
-    "eta_send": "2026-04-26T09:00:00Z"
-  },
-  "site_refactor": {
-    "completed_at": "2026-04-25T20:32:00Z",
-    "score_before": 3.1,
-    "score_after_estimated": 8.0,
-    "conversion_improvement": "+300-500%",
-    "changes": [
-      "Nouvelle homepage (catalogue visible)",
-      "Style pro clean (inspiré jordanfausta.com)",
-      "Branding cohérent (Ellie VAI partout)",
-      "Navigation fonctionnelle",
-      "Fixes red flags (fake urgency, demo warnings virés)"
-    ]
-  },
-  "blockers": [],
-  "stripe_status": {
-    "mode": "PRODUCTION",
-    "updated_at": "2026-04-25T20:02:00Z",
-    "payment_links_ready": false,
-    "products": ["Pro 149€", "Végé 99€", "Boutiques 79€", "Caves 79€"]
+  "blockers": [
+    "Email deliverability destroyed (66% bounce rate)",
+    "Site ellievai.com not accessible (DNS not configured)",
+    "Domain warmup required (2-4 weeks)",
+    "No revenue channel active"
+  ],
+  "pivot_strategies_proposed": {
+    "lead_gen_service_btp": {
+      "status": "proposed",
+      "timeline": "24-48h",
+      "probability": "70%",
+      "proposed_at": "2026-04-25T21:41:00Z"
+    },
+    "trading_arbitrage": {
+      "status": "proposed",
+      "options": 7,
+      "capital_required": "1000-5000€",
+      "proposed_at": "2026-04-25T21:42:00Z"
+    }
   },
   "next_actions": [
-    "URGENT: Setup Stripe payment links (4 produits)",
-    "URGENT: Tester site refactor sur https://ellievai.com",
-    "Monitoring ouvertures batch 1 (24-48h)",
-    "DIMANCHE: Batch 2 send (35 emails, 9h-12h)",
-    "DIMANCHE: Relances intelligentes J+1, J+2",
-    "Plan B si <500€: upsell Enterprise, closer manuel, flash sale"
+    "BLOCKED: Awaiting user decision on new strategy",
+    "Option A: Lead Gen Service BTP (no capital, service-based)",
+    "Option B: Trading/Arbitrage (capital 1000-5000€, various strategies)",
+    "Option C: Fix DNS + warmup email (timeline 2-4 weeks, too slow)"
   ],
-  "infrastructure_status": {
-    "rebranding_completed": true,
-    "dns_ovh_configured": true,
-    "vercel_configured": true,
-    "resend_verified": true,
-    "stripe_production": true,
-    "prospection_active": true,
-    "site_refactored": true
-  },
-  "last_update": "2026-04-25T20:32:00Z"
+  "last_update": "2026-04-25T22:05:00Z",
+  "last_report_sent": "2026-04-25T22:05:00Z"
 }

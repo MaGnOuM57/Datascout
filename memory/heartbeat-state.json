@@ -4,12 +4,12 @@
     "calendar": null,
     "weather": 1745834239,
     "project_status": 1745842800,
-    "git_workspace": 1745860800,
-    "business": 1745860800,
-    "revenue": 1745860800
+    "git_workspace": 1745867700,
+    "business": 1745867700,
+    "revenue": 1745867700
   },
   "lastProactiveMessage": 1745860800,
-  "checksToday": 9,
+  "checksToday": 10,
   "lastNightlyReview": null,
-  "notes": "21:00 - ALERTE CRITIQUE: Double blocage revenue - (1) DNS pas configuré, site inaccessible (2) Bounce rate 60% batch 1, réputation domaine impactée. Batch 2 suspendu. Plan de sauvetage proposé."
+  "notes": "22:01 - Situation stabilisée: Site UP (ellievai.com accessible), merci.html créé. Batch 1 emails en delivery_delayed (pas bounced, attente 28h). Payment links Stripe = action manuelle requise. Prochaine action autonome: dimanche 10h (prospection batch 2)."
 }
