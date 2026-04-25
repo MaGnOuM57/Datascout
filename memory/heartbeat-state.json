@@ -4,11 +4,11 @@
     "calendar": null,
     "weather": 1745834239,
     "project_status": 1745842800,
-    "git_workspace": 1745846400,
+    "git_workspace": 1745849200,
     "business": 1745848320
   },
   "lastProactiveMessage": 1745848320,
-  "checksToday": 5,
+  "checksToday": 6,
   "lastNightlyReview": null,
-  "notes": "15:32 - Vercel deploy OK (200). Refonte site complétée (dad323e, 5d1c031). 4 pages live. Next: Stripe setup + email sequence. Travail autonome en cours. HEARTBEAT_OK."
+  "notes": "16:00 - Git workspace clean (b225ff1). Site live (4 pages). Next: Stripe + email sequence. Weekend mode. HEARTBEAT_OK."
 }
