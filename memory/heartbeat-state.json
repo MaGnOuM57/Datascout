@@ -4,12 +4,12 @@
     "calendar": null,
     "weather": 1745834239,
     "project_status": 1745842800,
-    "git_workspace": 1745929200,
-    "business": 1745929200,
-    "revenue": 1745934000
+    "git_workspace": 1745936585,
+    "business": 1745936585,
+    "revenue": 1745936585
   },
   "lastProactiveMessage": 1745934000,
-  "checksToday": 5,
+  "checksToday": 6,
   "lastNightlyReview": null,
-  "notes": "13:00 dimanche - Rapport revenue envoyé. DataScout Pro 100% prêt (102 prospects, 5 emails), toujours bloqué par 3 tokens (GitHub, Vercel, Resend). T-35h avant deadline. Status: READY mais 0% exécuté. Prochain rapport: 17h-19h."
+  "notes": "16:03 dimanche - Tentative envoi batch 1 (5 emails premium). ÉCHEC: domaine datascout.pro non vérifié dans Resend (403). Blocker DNS documenté dans BLOCKER-RESEND-DOMAIN.md. Scripts prêts (send-batch-1-FIXED.js). Attente action le J (30 min DNS config). T-33h deadline. Revenue: 0€/500€."
 }
