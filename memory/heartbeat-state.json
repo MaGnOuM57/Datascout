@@ -6,10 +6,10 @@
     "project_status": 1745842800,
     "git_workspace": 1745867700,
     "business": 1745867700,
-    "revenue": 1745867700
+    "revenue": 1745908800
   },
-  "lastProactiveMessage": 1745860800,
-  "checksToday": 10,
+  "lastProactiveMessage": 1745908800,
+  "checksToday": 1,
   "lastNightlyReview": null,
-  "notes": "22:01 - Situation stabilisée: Site UP (ellievai.com accessible), merci.html créé. Batch 1 emails en delivery_delayed (pas bounced, attente 28h). Payment links Stripe = action manuelle requise. Prochaine action autonome: dimanche 10h (prospection batch 2)."
+  "notes": "09:00 dimanche - ALERTE CRITIQUE: 0€/500€, 14h restantes, blocage décision depuis 35h. Rapport urgence envoyé."
 }
