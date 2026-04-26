@@ -1,0 +1,37 @@
+[
+  {
+    "prospect": "Kaviar House",
+    "email": "direction@kaviarhouse.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":422,\"name\":\"validation_error\",\"message\":\"Tags should only contain ASCII letters, numbers, underscores, or dashes.\"}",
+    "timestamp": "2026-04-26T14:02:59.138Z"
+  },
+  {
+    "prospect": "Lazzaretti Rungis",
+    "email": "commercial@lazzaretti.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":422,\"name\":\"validation_error\",\"message\":\"Tags should only contain ASCII letters, numbers, underscores, or dashes.\"}",
+    "timestamp": "2026-04-26T14:02:59.895Z"
+  },
+  {
+    "prospect": "Maison Fossier",
+    "email": "pro@fossier.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":422,\"name\":\"validation_error\",\"message\":\"Tags should only contain ASCII letters, numbers, underscores, or dashes.\"}",
+    "timestamp": "2026-04-26T14:03:00.380Z"
+  },
+  {
+    "prospect": "Transgourmet",
+    "email": "dev.commercial@transgourmet.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":403,\"message\":\"The datascout.pro domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-04-26T14:03:00.565Z"
+  },
+  {
+    "prospect": "Electrolux Professional",
+    "email": "france.pro@electrolux.com",
+    "status": "failed",
+    "error": "{\"statusCode\":422,\"name\":\"validation_error\",\"message\":\"Tags should only contain ASCII letters, numbers, underscores, or dashes.\"}",
+    "timestamp": "2026-04-26T14:03:00.749Z"
+  }
+]

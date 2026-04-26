@@ -1,0 +1,37 @@
+[
+  {
+    "prospect": "Kaviar_House",
+    "email": "direction@kaviarhouse.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":403,\"message\":\"The datascout.pro domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-04-26T14:04:30.477Z"
+  },
+  {
+    "prospect": "Lazzaretti_Rungis",
+    "email": "commercial@lazzaretti.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":403,\"message\":\"The datascout.pro domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-04-26T14:04:30.672Z"
+  },
+  {
+    "prospect": "Maison_Fossier",
+    "email": "pro@fossier.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":403,\"message\":\"The datascout.pro domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-04-26T14:04:30.845Z"
+  },
+  {
+    "prospect": "Transgourmet",
+    "email": "dev.commercial@transgourmet.fr",
+    "status": "failed",
+    "error": "{\"statusCode\":403,\"message\":\"The datascout.pro domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-04-26T14:04:31.030Z"
+  },
+  {
+    "prospect": "Electrolux_Professional",
+    "email": "france.pro@electrolux.com",
+    "status": "failed",
+    "error": "{\"statusCode\":403,\"message\":\"The datascout.pro domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-04-26T14:04:31.196Z"
+  }
+]

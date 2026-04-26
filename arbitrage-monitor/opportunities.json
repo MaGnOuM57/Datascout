@@ -1,0 +1,170 @@
+[
+  {
+    "event": {
+      "sport": "Tennis ATP",
+      "player1": "Carlos Alcaraz",
+      "player2": "Jannik Sinner",
+      "tournament": "Monte Carlo Masters",
+      "bookmakers": [
+        "Unibet",
+        "Bwin"
+      ],
+      "odds": [
+        1.95,
+        2.18
+      ],
+      "time": "16:00 (aujourd'hui)"
+    },
+    "arb": {
+      "exists": true,
+      "profit_pct": 2.85,
+      "stakes": [
+        263.92,
+        236.08
+      ],
+      "guaranteed_return": 514.65,
+      "profit": 14.65,
+      "roi": 2.93
+    }
+  },
+  {
+    "event": {
+      "sport": "Tennis WTA",
+      "player1": "Iga Swiatek",
+      "player2": "Aryna Sabalenka",
+      "tournament": "Stuttgart Open",
+      "bookmakers": [
+        "Betclic",
+        "Pinnacle"
+      ],
+      "odds": [
+        2.1,
+        2.05
+      ],
+      "time": "14:30 (aujourd'hui)"
+    },
+    "arb": {
+      "exists": true,
+      "profit_pct": 3.6,
+      "stakes": [
+        246.99,
+        253.01
+      ],
+      "guaranteed_return": 518.67,
+      "profit": 18.67,
+      "roi": 3.73
+    }
+  },
+  {
+    "event": {
+      "sport": "NBA",
+      "player1": "Boston Celtics",
+      "player2": "Milwaukee Bucks",
+      "tournament": "NBA Playoffs",
+      "bookmakers": [
+        "Bet365",
+        "Unibet"
+      ],
+      "odds": [
+        2.15,
+        1.98
+      ],
+      "time": "01:30 (demain)"
+    },
+    "arb": {
+      "exists": true,
+      "profit_pct": 2.98,
+      "stakes": [
+        239.71,
+        260.29
+      ],
+      "guaranteed_return": 515.38,
+      "profit": 15.38,
+      "roi": 3.08
+    }
+  },
+  {
+    "event": {
+      "sport": "Tennis ATP",
+      "player1": "Novak Djokovic",
+      "player2": "Daniil Medvedev",
+      "tournament": "Barcelona Open",
+      "bookmakers": [
+        "Winamax",
+        "1xbet"
+      ],
+      "odds": [
+        2.05,
+        2.12
+      ],
+      "time": "18:30 (aujourd'hui)"
+    },
+    "arb": {
+      "exists": true,
+      "profit_pct": 4.05,
+      "stakes": [
+        254.2,
+        245.8
+      ],
+      "guaranteed_return": 521.1,
+      "profit": 21.1,
+      "roi": 4.22
+    }
+  },
+  {
+    "event": {
+      "sport": "NHL",
+      "player1": "Toronto Maple Leafs",
+      "player2": "Florida Panthers",
+      "tournament": "NHL Playoffs",
+      "bookmakers": [
+        "Bwin",
+        "Betclic"
+      ],
+      "odds": [
+        2.2,
+        1.95
+      ],
+      "time": "19:00 (aujourd'hui)"
+    },
+    "arb": {
+      "exists": true,
+      "profit_pct": 3.26,
+      "stakes": [
+        234.94,
+        265.06
+      ],
+      "guaranteed_return": 516.87,
+      "profit": 16.87,
+      "roi": 3.37
+    }
+  },
+  {
+    "event": {
+      "sport": "MMA/UFC",
+      "player1": "Islam Makhachev",
+      "player2": "Dustin Poirier",
+      "tournament": "UFC 302",
+      "bookmakers": [
+        "Unibet",
+        "Bet365"
+      ],
+      "odds": [
+        2.08,
+        2.1
+      ],
+      "time": "04:00 (demain)"
+    },
+    "arb": {
+      "exists": true,
+      "profit_pct": 4.3,
+      "stakes": [
+        251.2,
+        248.8
+      ],
+      "guaranteed_return": 522.49,
+      "profit": 22.49,
+      "roi": 4.5
+    }
+  }
+]
