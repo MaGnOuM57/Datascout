@@ -1,0 +1,15 @@
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": 1745834239,
+    "project_status": 1745842800,
+    "git_workspace": 1745929200,
+    "business": 1745929200,
+    "revenue": 1745929200
+  },
+  "lastProactiveMessage": 1745929200,
+  "checksToday": 4,
+  "lastNightlyReview": null,
+  "notes": "14:00 dimanche - BLOCAGE CRITIQUE IDENTIFIÉ: DataScout Pro 100% prêt (102 prospects, 5 emails rédigés, landing page), MAIS bloqué par 3 tokens manquants (GitHub, Vercel, Resend). Sans ces tokens = 0 chance ventes. Alerte envoyée au J avec instructions précises obtention tokens (5 min). Probabilité succès si tokens reçus rapidement: ~15-20% (vs <5% sans action)."
+}

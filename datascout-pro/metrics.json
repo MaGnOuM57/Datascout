@@ -1,7 +1,7 @@
 {
   "project": "DataScout Pro",
   "start_date": "2026-04-25",
-  "last_updated": "2026-04-25T14:20:00Z",
+  "last_updated": "2026-04-26T14:05:00Z",
   
   "infrastructure": {
     "github_status": "connected",
@@ -13,13 +13,17 @@
   },
   
   "prospects": {
-    "total_identified": 77,
+    "total_identified": 89,
     "segmentation": {
       "fournisseurs_bio": 20,
       "equipementiers": 25,
-      "grossistes": 32
+      "grossistes": 32,
+      "luxe_premium": 8,
+      "epicerie_fine": 4
     },
-    "avg_score": 8.1
+    "avg_score": 8.05,
+    "last_batch": "2026-04-26-batch-14h",
+    "batches_total": 5
   },
   
   "emails": {
@@ -29,7 +33,8 @@
     "open_rate": "0%",
     "reply_rate": "0%",
     "templates_created": 3,
-    "last_batch": null
+    "personalized_drafts": 15,
+    "last_draft": "2026-04-26-14h"
   },
   
   "conversions": {
@@ -77,5 +82,5 @@
   },
   
   "validation_deadline": "2026-05-09",
-  "days_remaining": 14
+  "days_remaining": 13
 }
