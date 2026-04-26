@@ -1,0 +1,17 @@
+[
+  {
+    "to": "hello@lafourche.fr",
+    "status": "sent",
+    "id": "b5c37469-dba6-4369-a8cf-183d4a1f5f70"
+  },
+  {
+    "to": "hello@laruchequiditoui.fr",
+    "status": "sent",
+    "id": "58037853-34ff-472b-9726-c1097402c060"
+  },
+  {
+    "to": "contact@biopartenaire.com",
+    "status": "sent",
+    "id": "245958ec-eeb0-41c5-9668-72c5a63fa96f"
+  }
+]
