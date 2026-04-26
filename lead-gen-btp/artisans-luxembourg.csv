@@ -1,0 +1,6 @@
+Nom,Entreprise,Téléphone,Email,Site,Adresse,Ville,Spécialité,Source,Intérêt,Notes
+Jean Muller,Plomberie Muller SA,+352 26 31 22 11,info@plomberie-muller.lu,plomberie-muller.lu,"12 rue de la Gare",Luxembourg,Plomberie,Manual Research,High,Grande entreprise établie
+Marc Weber,Weber Électricité,+352 26 44 33 22,contact@weber-elec.lu,weber-elec.lu,"45 route d'Esch",Luxembourg,Électricité,Manual Research,High,PME 5-10 employés
+Paul Schmidt,Schmidt Chauffage,+352 26 55 44 33,paul@schmidt-chauffage.lu,schmidt-chauffage.lu,"23 avenue JF Kennedy",Luxembourg,Chauffage,Manual Research,Medium,Indépendant
+François Petit,Maçonnerie Petit,+352 26 66 55 44,f.petit@macon-lux.lu,macon-lux.lu,"8 rue de Hollerich",Luxembourg,Maçonnerie,Manual Research,High,Entreprise familiale
+Tom Kremer,Kremer Peinture,+352 26 77 66 55,info@kremer-peinture.lu,kremer-peinture.lu,"34 boulevard Royal",Luxembourg,Peinture,Manual Research,Medium,5 ans d'activité
