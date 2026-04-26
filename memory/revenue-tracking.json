@@ -39,9 +39,9 @@
     "status": "ACTIVE_SENDING",
     "focus": "Producteurs bio + Grossistes + Marketplaces",
     "channel": "Cold emails (ultra-personalized)",
-    "emails_ready": 5,
+    "emails_ready": 10,
     "emails_sent_today": 5,
-    "emails_in_progress": 0,
+    "emails_in_progress": 3,
     "emails_attempted": 5,
     "emails_failed": 0,
     "prospects_scraped": 102,
@@ -49,16 +49,21 @@
     "conversion_estimate": "3-5% (standard cold email)",
     "expected_sales_batch1": "0-1 sales (0-149€)",
     "expected_sales_week1": "3-5 sales (447-745€)",
-    "current_batch": "batch-1-ultra-qualified (5 prospects 9-10/10) - COMPLETED",
+    "current_batch": "batch-1-ultra-qualified (5/5 sending, ETA 18:20)",
     "send_started_at": "2026-04-26T15:05:00Z",
-    "send_completed_at": "2026-04-26T16:00:00Z",
     "batch1_emails": [
-      {"to": "commercial@fermeduvalvert.fr", "sent_at": "2026-04-26T15:05:00Z", "status": "sent"},
-      {"to": "contact@biocoopprovence.fr", "sent_at": "2026-04-26T16:00:00Z", "status": "sending"},
-      {"to": "hello@lafourche.fr", "sent_at": "2026-04-26T16:00:00Z", "status": "sending"},
-      {"to": "hello@laruchequiditoui.fr", "sent_at": "2026-04-26T16:00:00Z", "status": "sending"},
-      {"to": "contact@biopartenaire.com", "sent_at": "2026-04-26T16:00:00Z", "status": "sending"}
-    ]
+      {"to": "commercial@fermeduvalvert.fr", "sent_at": "2026-04-26T15:05:00Z", "status": "sent", "id": "0c3cfb4b-eb80-4aee-ab08-08eb70cd202b"},
+      {"to": "contact@biocoopprovence.fr", "sent_at": "2026-04-26T16:04:00Z", "status": "sent", "id": "55efb106-62d1-4b0a-b50b-f08500f27807"},
+      {"to": "hello@lafourche.fr", "sent_at": "2026-04-26T16:08:00Z", "status": "sending"},
+      {"to": "hello@laruchequiditoui.fr", "sent_at": "2026-04-26T16:12:00Z", "status": "queued"},
+      {"to": "contact@biopartenaire.com", "sent_at": "2026-04-26T16:16:00Z", "status": "queued"}
+    ],
+    "batch2_ready": {
+      "prospects": 5,
+      "scoring": "10/10 (all ultra-qualified producteurs bio)",
+      "scheduled_for": "2026-04-26T21:00:00Z",
+      "file": "batch-2-ultra-qualified.json"
+    }
   },
   "reality_assessment": {
     "autonomous_revenue_probability_without_tokens": "< 5%",
