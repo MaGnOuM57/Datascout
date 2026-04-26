@@ -1,29 +1,36 @@
 {
   "project": "DataScout Pro",
   "start_date": "2026-04-25",
-  "last_updated": "2026-04-26T14:05:00Z",
+  "last_updated": "2026-04-26T18:10:00Z",
   
   "infrastructure": {
     "github_status": "connected",
-    "vercel_status": "live",
+    "vercel_status": "404_error",
     "vercel_url": "https://datascout-pro.vercel.app",
+    "vercel_blocker": "Site returns 404 - deployment issue",
     "email_provider": "Resend",
-    "email_status": "configured",
-    "email_quota": "3000/month"
+    "email_status": "blocked",
+    "email_blocker": "Domain datascout.pro NOT VERIFIED",
+    "email_quota": "3000/month",
+    "stripe_status": "incomplete",
+    "stripe_blocker": "Payment links not created"
   },
   
   "prospects": {
-    "total_identified": 89,
+    "total_identified": 101,
     "segmentation": {
       "fournisseurs_bio": 20,
       "equipementiers": 25,
-      "grossistes": 32,
+      "grossistes": 33,
       "luxe_premium": 8,
-      "epicerie_fine": 4
+      "epicerie_fine": 4,
+      "traiteurs_premium": 5,
+      "plateformes_b2b": 3,
+      "autres": 3
     },
-    "avg_score": 8.05,
-    "last_batch": "2026-04-26-batch-14h",
-    "batches_total": 5
+    "avg_score": 8.15,
+    "last_batch": "2026-04-26-batch-18h",
+    "batches_total": 6
   },
   
   "emails": {
@@ -33,8 +40,9 @@
     "open_rate": "0%",
     "reply_rate": "0%",
     "templates_created": 3,
-    "personalized_drafts": 15,
-    "last_draft": "2026-04-26-14h"
+    "personalized_drafts": 20,
+    "last_draft": "2026-04-26-18h",
+    "blocked_reason": "Resend domain verification pending"
   },
   
   "conversions": {
@@ -43,6 +51,32 @@
     "sales_closed": 0,
     "revenue_total": "0€",
     "avg_deal_size": "149€"
+  },
+  
+  "blockers": {
+    "critical": [
+      {
+        "id": "vercel_404",
+        "severity": "high",
+        "impact": "Site inaccessible, no conversions possible",
+        "owner": "le J",
+        "eta": "Unknown - needs investigation"
+      },
+      {
+        "id": "resend_domain",
+        "severity": "critical",
+        "impact": "0 emails sent, no market feedback",
+        "owner": "le J",
+        "eta": "5-30 min (DNS verification)"
+      },
+      {
+        "id": "stripe_links",
+        "severity": "critical",
+        "impact": "Conversions impossible even if lead interested",
+        "owner": "le J",
+        "eta": "5-15 min (create payment links)"
+      }
+    ]
   },
   
   "milestones": [
@@ -65,20 +99,41 @@
       "date": "2026-04-25T14:18:00Z",
       "event": "Resend Configured",
       "details": "Email sending operational, test email successful"
+    },
+    {
+      "date": "2026-04-26T18:10:00Z",
+      "event": "Batch #6 Completed",
+      "details": "12 new premium prospects (traiteurs + plateformes), 5 cold emails drafted. Total: 101 prospects, 20 drafts."
     }
   ],
   
   "goals": {
     "week_1": {
       "target_emails": 50,
+      "actual_emails": 0,
       "target_sales": "1-2",
-      "target_revenue": "149-298€"
+      "actual_sales": 0,
+      "target_revenue": "149-298€",
+      "actual_revenue": "0€",
+      "status": "BLOCKED (email verification)"
     },
     "month_1": {
       "target_emails": 200,
       "target_sales": "5-8",
       "target_revenue": "745-1192€"
     }
+  },
+  
+  "automation": {
+    "cron_jobs": [
+      "10h: Prospection batch + draft emails",
+      "14h: Prospection batch + draft emails",
+      "18h: Prospection batch + veille",
+      "22h: Nightly report + metrics update"
+    ],
+    "daily_output": "25-35 prospects, 10-15 emails drafted",
+    "executions_today": 3,
+    "status": "active"
   },
   
   "validation_deadline": "2026-05-09",
