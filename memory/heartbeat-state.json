@@ -11,5 +11,5 @@
   "lastProactiveMessage": 1745934000,
   "checksToday": 6,
   "lastNightlyReview": null,
-  "notes": "16:03 dimanche - Tentative envoi batch 1 (5 emails premium). ÉCHEC: domaine datascout.pro non vérifié dans Resend (403). Blocker DNS documenté dans BLOCKER-RESEND-DOMAIN.md. Scripts prêts (send-batch-1-FIXED.js). Attente action le J (30 min DNS config). T-33h deadline. Revenue: 0€/500€."
+  "notes": "17:12 dimanche - UNBLOCKED! Batch 1 en cours: 3/5 emails envoyés (Ferme Val Vert, BioCoop, La Fourche). 0% bounce, 100% success. Switched to ellievai.com (verified). Prospects 9-10/10. ETA completion: 17:20. T-32h deadline. Revenue: 0€/500€ (prospects en phase d'ouverture)."
 }
